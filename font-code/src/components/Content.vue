@@ -1,5 +1,5 @@
 <template>
-  <div>zhong</div>
+  <div></div>
 </template>
 
 <script setup></script>

@@ -253,6 +253,15 @@
 </template>
 
 <script setup>
+/**
+ * 侧边栏组件 - 显示代币详细信息及市场数据
+ * 功能包括：
+ * 1. 代币基本信息展示
+ * 2. 实时价格显示
+ * 3. 市场数据可视化
+ * 4. 流动性池信息
+ * 5. 风险检查面板
+ */
 // 组件逻辑可以在这里添加
 </script>
 
@@ -268,7 +277,7 @@
   height: 54px;
   transition:
     transform 0.2s ease,
-    filter 0.2s ease;
+    filter 0.2s ease; /* 交互动效配置 */
   cursor: pointer;
 }
 .coin-profile img:hover {
@@ -336,7 +345,7 @@ div .coin-name span {
   cursor: pointer;
   transition:
     transform 0.2s ease,
-    filter 0.2s ease;
+    filter 0.2s ease; /* 交互动效配置 */
 }
 
 .coin-address img:hover {
@@ -360,7 +369,7 @@ div .coin-name span {
   cursor: pointer;
   transition:
     transform 0.2s ease,
-    filter 0.2s ease;
+    filter 0.2s ease; /* 交互动效配置 */
 }
 
 .icon img:hover {
@@ -385,7 +394,7 @@ div .coin-name span {
   cursor: pointer;
   transition:
     transform 0.2s ease,
-    filter 0.2s ease;
+    filter 0.2s ease; /* 交互动效配置 */
 }
 
 .bit img:hover {
@@ -738,7 +747,7 @@ div .coin-name span {
   cursor: pointer;
   transition:
     transform 0.2s ease,
-    filter 0.2s ease;
+    filter 0.2s ease; /* 交互动效配置 */
 }
 .address-row img:hover {
   transform: scale(1.2);
@@ -797,7 +806,7 @@ div .coin-name span {
   cursor: pointer;
   transition:
     transform 0.2s ease,
-    filter 0.2s ease;
+    filter 0.2s ease; /* 交互动效配置 */
 }
 
 .risk-section img:hover {
@@ -855,7 +864,7 @@ div .coin-name span {
   cursor: pointer;
   transition:
     transform 0.2s ease,
-    filter 0.2s ease;
+    filter 0.2s ease; /* 交互动效配置 */
 }
 
 .risk-value img:hover {

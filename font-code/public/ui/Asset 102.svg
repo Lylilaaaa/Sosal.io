@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 30">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        font-family: Inter-Medium, Inter;
+        font-size: 10px;
+        font-variation-settings: 'wght' 500, 'slnt' 0;
+        font-weight: 500;
+      }
+
+      .cls-4 {
+        font-family: 'Inter_640.000wght', Inter;
+        font-variation-settings: 'wght' 640, 'slnt' 0;
+      }
+
+      .cls-4, .cls-5 {
+        font-size: 12px;
+      }
+
+      .cls-6, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        fill: url(#New_Gradient_Swatch_2);
+      }
+
+      .cls-5 {
+        font-family: Inter-ExtraBold, Inter;
+        font-variation-settings: 'wght' 800, 'slnt' 0;
+        font-weight: 700;
+      }
+    </style>
+    <linearGradient id="New_Gradient_Swatch_2" data-name="New Gradient Swatch 2" x1="71.25" y1="-34.8" x2="128.75" y2="64.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff5ce4"/>
+      <stop offset=".08" stop-color="#ee46e4"/>
+      <stop offset=".16" stop-color="#e135e4"/>
+      <stop offset=".23" stop-color="#dd30e4"/>
+      <stop offset=".53" stop-color="#a330e4"/>
+      <stop offset=".89" stop-color="#870ff7"/>
+      <stop offset="1" stop-color="#6000cf"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <rect class="cls-7" y="0" width="200" height="30" rx="15" ry="15"/>
+      <g>
+        <text class="cls-5" transform="translate(44.73 20.27)"><tspan x="0" y="0">SELL</tspan></text>
+        <text class="cls-6" transform="translate(79.23 20.27)"><tspan class="cls-4" x="0" y="0">0.25 SOL </tspan><tspan class="cls-3" x="56.53" y="0">($4</tspan><tspan class="cls-1" x="73.28" y="0">6</tspan><tspan class="cls-2" x="79.31" y="0">.28)</tspan></text>
+        <g>
+          <path class="cls-6" d="M34.65,12.39l-2.79.11,2.05-4.49c.41-.89-.69-1.7-1.42-1.05l-6.38,5.64c-.59.52-.2,1.5.59,1.47l2.79-.11-2.05,4.49c-.41.89.69,1.7,1.42,1.05l6.38-5.64c.59-.52.2-1.5-.59-1.47Z"/>
+          <path class="cls-6" d="M35.4,21.63h-9.46c-.81,0-1.5-.55-1.69-1.34l-1.66-7.21c-.06-.27.11-.54.38-.6.27-.06.54.11.6.38l1.66,7.21c.08.33.37.57.71.57h9.46c.34,0,.63-.23.71-.57l1.66-7.21c.06-.27.33-.44.6-.38.27.06.44.33.38.6l-1.66,7.21c-.18.79-.88,1.34-1.69,1.34Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

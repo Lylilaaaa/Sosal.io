@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="11.1" y="15.18" width="37.81" height="29.63"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="45.4" y1="1914.8" x2="24.52" y2="1874.8" gradientTransform="translate(0 1926.42) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#75faaa"/>
+      <stop offset="1" stop-color="#c936f5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="36.27" y1="1919.56" x2="15.39" y2="1879.56" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="40.81" y1="1917.2" x2="19.93" y2="1877.2" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <circle cx="30" cy="30" r="30"/>
+      <g class="cls-5">
+        <g>
+          <path class="cls-4" d="M17.24,37.8c.23-.23.54-.36.87-.36h30.18c.55,0,.83.67.44,1.06l-5.96,5.96c-.23.23-.54.36-.87.36H11.71c-.55,0-.83-.67-.44-1.06l5.96-5.96Z"/>
+          <path class="cls-3" d="M17.24,15.54c.24-.23.55-.36.87-.36h30.18c.55,0,.83.67.44,1.06l-5.96,5.96c-.23.23-.55.36-.87.36H11.71c-.55,0-.83-.67-.44-1.06l5.96-5.96Z"/>
+          <path class="cls-2" d="M42.76,26.6c-.23-.23-.55-.36-.87-.36H11.71c-.55,0-.83.67-.44,1.06l5.96,5.96c.23.23.54.36.87.36h30.18c.55,0,.83-.67.44-1.06l-5.96-5.96h0Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #b2a18f;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        fill: #665f59;
+        font-family: 'Inter_360.000wght', Inter;
+        font-size: 12px;
+        font-variation-settings: 'wght' 360, 'slnt' 0;
+      }
+
+      .cls-3 {
+        fill: #242021;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <rect class="cls-3" x="0" y="0" width="480" height="30" rx="15" ry="15"/>
+      <text class="cls-2" transform="translate(39.82 19.26)"><tspan x="0" y="0">search by TOKEN or ADDRESS</tspan></text>
+      <g>
+        <circle class="cls-1" cx="23.98" cy="14.32" r="5" transform="translate(-3.1 21.15) rotate(-45)"/>
+        <line class="cls-1" x1="27.51" y1="17.85" x2="30.34" y2="20.68"/>
+      </g>
+    </g>
+  </g>
+</svg>

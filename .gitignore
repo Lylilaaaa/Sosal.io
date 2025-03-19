@@ -1,0 +1,32 @@
+# 基础排除
+.DS_Store
+/font-code/node_modules/*
+/font-code/dist/*
+/font-code/dist-ssr/*
+*.local
+
+# 日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 编辑器目录
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 本地环境文件
+.env
+.env.*
+!.env.example
+
+# 类型声明文件
+
+# 需要跟踪的特殊文件（按需取消注释）
+#!src/components/
+#!src/layouts/
+#!src/views/

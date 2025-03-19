@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 24">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Inter-Light, Inter;
+        font-size: 10px;
+        font-variation-settings: 'wght' 300, 'slnt' 0;
+        font-weight: 300;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #b2a18f;
+      }
+
+      .cls-3 {
+        fill: #181616;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <rect class="cls-3" x="0" y="0" width="153" height="24" rx="4" ry="4"/>
+      <g>
+        <text class="cls-1" transform="translate(74.3 15.92)"><tspan x="0" y="0">Chart</tspan></text>
+        <g>
+          <path class="cls-2" d="M65.21,10.08c-.07-.08-.17-.11-.28-.11-.1,0-.2.05-.27.13l-2.49,2.88-2.19-.91c-.13-.06-.29-.03-.4.07l-2.57,2.42c-.08.07-.12.17-.12.27v1.67c0,.21.17.38.38.38h10.02c.21,0,.38-.17.38-.38v-3.76c0-.1-.04-.19-.11-.26l-2.34-2.41Z"/>
+          <path class="cls-2" d="M57.27,12.13c.09,0,.18-.03.26-.1l2.4-2.25,2.21.92c.15.06.32.02.43-.1l2.4-2.77,2.06,2.11c.15.15.38.15.53,0,.15-.14.15-.38,0-.53l-2.34-2.41c-.07-.08-.17-.12-.28-.11-.1,0-.2.05-.27.13l-2.49,2.88-2.19-.91c-.13-.06-.29-.03-.4.07l-2.57,2.42c-.15.14-.16.38-.02.53.07.08.17.12.27.12Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

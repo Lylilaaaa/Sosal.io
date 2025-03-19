@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72.94 12.08">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Inter-Light, Inter;
+        font-size: 10px;
+        font-variation-settings: 'wght' 300, 'slnt' 0;
+        font-weight: 300;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #b2a18f;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <text class="cls-1" transform="translate(0 8.89)"><tspan x="0" y="0">8VqG...pump</tspan></text>
+      <g>
+        <path class="cls-2" d="M70.94,0h-3c-.69,0-1.3.35-1.66.89h2.77c1.65,0,3,1.35,3,3v2.77c.54-.36.89-.97.89-1.66v-3c0-1.1-.9-2-2-2Z"/>
+        <rect class="cls-2" x="64.06" y="1.89" width="7" height="7" rx="2" ry="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

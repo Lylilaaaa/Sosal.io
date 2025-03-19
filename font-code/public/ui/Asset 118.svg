@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.84 13.14">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #665f59;
+      }
+
+      .cls-2 {
+        font-family: 'Inter_360.000wght', Inter;
+        font-size: 10px;
+        font-variation-settings: 'wght' 360, 'slnt' 0;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <text class="cls-2" transform="translate(0 9.94)"><tspan x="0" y="0">EXP</tspan></text>
+      <g>
+        <polygon class="cls-1" points="35.31 9.82 27.02 9.82 27.02 1.53 31.17 1.53 31.17 .35 25.84 .35 25.84 11 36.49 11 36.49 5.68 35.31 5.68 35.31 9.82"/>
+        <polygon class="cls-1" points="29.17 6.83 30.01 7.67 35.22 2.45 36.84 4.07 36.84 0 32.77 0 34.39 1.61 29.17 6.83"/>
+      </g>
+    </g>
+  </g>
+</svg>

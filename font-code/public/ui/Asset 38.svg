@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.6 10.15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #181616;
+        font-family: 'Inter_640.000wght', Inter;
+        font-size: 7.2px;
+        font-variation-settings: 'wght' 640, 'slnt' 0;
+      }
+
+      .cls-2 {
+        fill: #2bffbc;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <rect class="cls-2" width="17.6" height="9.9" rx="2" ry="2"/>
+      <text class="cls-1" transform="translate(1.35 7.85)"><tspan x="0" y="0">DEV</tspan></text>
+    </g>
+  </g>
+</svg>

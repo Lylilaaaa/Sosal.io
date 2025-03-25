@@ -27,6 +27,6 @@ import RightBar from '@/components/RightBar.vue';
 }
 
 .rightbar {
-  width: 314px;
+  width: 315px;
 }
 </style>

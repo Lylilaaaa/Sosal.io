@@ -49,7 +49,66 @@
             <span class="text">Select Wallet</span>
             <img class="select" src="/ui/Asset 80.svg" alt="" />
           </div>
-          <span>BAL:12.2349 SOL</span>
+          <span class="text">BAL:12.2349 SOL</span>
+        </div>
+        <div class="price">
+          <input type="text" placeholder="Input amount to buy in SOL" />
+          <span>SOL</span>
+          <img src="/ui/Asset27.svg" alt="" />
+        </div>
+        <div class="selectPrice">
+          <div class="clickPrice">
+            <img src="/ui/Asset27.svg" alt="" />
+            <span>0.05</span>
+          </div>
+          <div class="clickPrice">
+            <img src="/ui/Asset27.svg" alt="" />
+            <span>0.10</span>
+          </div>
+          <div class="clickPrice">
+            <img src="/ui/Asset27.svg" alt="" />
+            <span>0.25</span>
+          </div>
+          <div class="clickPrice">
+            <img src="/ui/Asset27.svg" alt="" />
+            <span>0.50</span>
+          </div>
+          <div class="clickPrice">
+            <img src="/ui/Asset27.svg" alt="" />
+            <span>1</span>
+          </div>
+          <div class="clickPrice">
+            <img src="/ui/Asset27.svg" alt="" />
+            <span>2</span>
+          </div>
+          <div class="clickPrice">
+            <img src="/ui/Asset27.svg" alt="" />
+            <span>5</span>
+          </div>
+          <div class="clickPrice">
+            <img src="/ui/Asset27.svg" alt="" />
+            <span>10</span>
+          </div>
+          <div class="mev">
+            <span>
+              <span class="opacity">MEV PROTECTION:</span>
+              <span>ON</span>
+            </span>
+            <span>
+              <span>0.018</span>
+              <span class="opacity">:PRIORITY (SOL)</span>
+            </span>
+          </div>
+          <div class="mev">
+            <span>
+              <span class="opacity">SLIPPAGE:</span>
+              <span>Auto(<span class="red">30%</span>)</span>
+            </span>
+            <span>
+              <span>0.012</span>
+              <span class="opacity">:BRIBERY(SOL)</span>
+            </span>
+          </div>
         </div>
       </div>
       <div class="buySetting"></div>
@@ -253,13 +312,21 @@
   line-height: 27px;
   border-radius: 4px;
 }
+.selectWalletTop .text {
+  font-size: 12px;
+}
+
+span.text {
+  font-size: 10px;
+  color: #b2a18f;
+}
 
 .selectWalletTop img {
   width: 13px;
 }
 
 .selectWalletTop .wallet {
-  margin-left: 3px;
+  margin-left: 8px;
 }
 .selectWalletTop .select {
   margin-left: auto;
@@ -269,5 +336,95 @@
 .sportLight {
   background-color: #181616;
   border-radius: 8px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #b2a18f;
+  border-radius: 4px;
+  padding: 4px;
+}
+.price input {
+  width: 230px;
+  height: 27px;
+  background-color: #181616;
+  border: 1px solid #b2a18f;
+  border-radius: 4px;
+  color: #b2a18f;
+  font-size: 12px;
+  outline: none;
+  border: 0;
+  /* input默认文字样式设置 */
+}
+
+input::placeholder {
+  color: #b2a18f;
+  font-weight: normal;
+  font-size: 12px;
+  opacity: 0.4;
+}
+
+.price span {
+  color: #b2a18f;
+  font-size: 12px;
+}
+
+.price img {
+  width: 20px;
+  margin: 0 10px;
+}
+
+.selectPrice {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+.clickPrice {
+  width: 70px;
+  border: 1px solid #b2a18f;
+  gap: 5px;
+  padding: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 4px;
+  color: #b2a18f;
+  margin-bottom: 8px;
+}
+
+.clickPrice span {
+  font-size: 12px;
+}
+.selectPrice img {
+  width: 18px;
+}
+
+.mev {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #b2a18f;
+
+  margin-bottom: 6px;
+}
+
+.opacity {
+  opacity: 0.4;
+}
+
+.mev .red {
+  color: #e70089;
+  font-weight: bold;
+}
+
+.mev span span {
+  color: #b2a18f;
+  margin: 2px;
 }
 </style>

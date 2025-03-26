@@ -111,8 +111,30 @@
           </div>
         </div>
       </div>
-      <div class="buySetting"></div>
-      <div class="buyBottom"></div>
+      <div class="buySetting">
+        <div class="setting">
+          <img class="left" src="/ui/Asset 49.svg" alt="" />
+          <span>Advanced Settings</span>
+          <img class="right" src="/ui/Asset 80.svg" alt="" />
+        </div>
+        <div class="setting">
+          <img class="left" src="/ui/Asset 49.svg" alt="" />
+          <span>Auto TP/SL Settings</span>
+          <img class="right" src="/ui/Asset 80.svg" alt="" />
+        </div>
+      </div>
+      <div class="buyBottom">
+        <a href="">
+          <div class="buyButton">
+            <img src="/ui/Asset 22.svg" alt="" />
+            <span>BUY <span>0.25</span> SOL ($<span>46.28</span>)</span>
+          </div>
+        </a>
+        <div class="warning">
+          Once you click on <strong>BUY</strong> , your transaction is sent immediately.<br />
+          And all above your <strong>TP/SL ORDERS</strong> will be created at the same time.
+        </div>
+      </div>
     </div>
 
     <div class="sportLight"></div>
@@ -426,5 +448,69 @@ input::placeholder {
 .mev span span {
   color: #b2a18f;
   margin: 2px;
+}
+
+/* setting样式 */
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(178, 161, 143, 40%);
+  border-bottom: 1px solid rgba(178, 161, 143, 40%);
+  margin: 4px 0;
+  padding: 8px 0;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.setting img {
+  width: 15px;
+}
+
+.setting img.left {
+  margin-right: 8px;
+}
+.setting img.right {
+  margin-left: auto;
+}
+
+/* buy 底部按钮 */
+.buyButton {
+  width: 80%;
+  height: 40px;
+  background-color: #ff8000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin: 20px auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.buyButton img {
+  width: 15px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.buyButton span {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.warning {
+  padding: 0 12px;
+  color: #ff8000;
+  font-size: 8px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+div strong {
+  font-weight: bold;
 }
 </style>

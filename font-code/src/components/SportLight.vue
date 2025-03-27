@@ -1,11 +1,69 @@
 <template>
-  <div class="sportLight">sshhhs</div>
+  <div class="sportLight">
+    <div class="nav">
+      <img src="/ui/Asset 83.svg" alt="" />
+      <a><img src="@/assets/Asset16.svg" alt="" /><span>SportLight</span></a>
+      <a>Trending</a>
+    </div>
+    <div class="time">
+      <div>5M</div>
+      <div>1H</div>
+      <div>6H</div>
+      <div>24</div>
+    </div>
+  </div>
 </template>
 
 <script setup></script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .sportLight {
-    color: @main
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 8px;
+    a {
+      font-size: 12px;
+      color: $textColor;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      img {
+        width: 10px;
+      }
+      span {
+        color: white;
+        font-weight: bold;
+      }
+    }
+    img {
+      width: 14px;
+    }
+  }
+}
+.time {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 8px;
+  gap: 4px;
+  div {
+    width: 18px;
+    height: 18px;
+    border: 1px solid $lightColor;
+    border-radius: 3px;
+    background-color: #282623;
+    color: $lightColor;
+    font-size: 9px;
+    line-height: 18px;
+    text-align: center;
+    &:hover {
+      background-color: $mainColor;
+      color: white;
+    }
+  }
 }
 </style>

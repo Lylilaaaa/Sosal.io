@@ -137,11 +137,13 @@
       </div>
     </div>
 
-    <div class="sportLight"></div>
+    <SportLight />
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import SportLight from './SportLight.vue';
+</script>
 
 <style scoped>
 .right-container {

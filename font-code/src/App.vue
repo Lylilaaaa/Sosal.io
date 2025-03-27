@@ -7,7 +7,6 @@
 </template>
 
 <style>
-html,
 body {
   background-color: #242021;
 }

@@ -11,6 +11,17 @@
       <div>6H</div>
       <div>24</div>
     </div>
+    <div class="order">
+      <div class="token-vol">
+        <span class="token">Token</span>|
+        <span class="vol">Vol</span>
+        <img src="/ui/Asset 92.svg" alt="" />
+      </div>
+      <div class="price-change">
+        <img src="/ui/Asset 92.svg" alt="" />
+        <span class="price">Price</span>| <span class="change">Change</span>%
+      </div>
+    </div>
   </div>
 </template>
 
@@ -63,6 +74,37 @@
     &:hover {
       background-color: $mainColor;
       color: white;
+    }
+  }
+}
+.order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  color: $lightColor;
+  border-bottom: 1px solid $lightColor;
+  margin: 8px;
+  padding: 0 0 4px 0;
+
+  .token-vol {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+
+    img {
+      width: 8px;
+    }
+  }
+  .price-change {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+
+    img {
+      width: 8px;
     }
   }
 }

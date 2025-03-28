@@ -10,12 +10,10 @@ declare module 'vue' {
   export interface GlobalComponents {
     Content: typeof import('./../components/Content.vue')['default']
     Nav: typeof import('./../components/Nav.vue')['default']
-    Nav2: typeof import('./../components/Nav2.vue')['default']
     RightBar: typeof import('./../components/RightBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Sidebar: typeof import('./../components/Sidebar.vue')['default']
     SportLight: typeof import('./../components/SportLight.vue')['default']
-    TokenCard: typeof import('./../components/TokenCard.vue')['default']
   }
 }

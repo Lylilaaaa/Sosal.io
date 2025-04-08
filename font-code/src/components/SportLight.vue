@@ -26,9 +26,320 @@
       <ul class="list">
         <li class="item">
           <img class="collect" src="/ui/Asset 93.svg" alt="" />
-          <img src="/ui/Asset 33.svg" alt="" class="avatar" />
-          <div class="info"></div>
-          <div class="info"></div>
+          <div class="token-img">
+            <img src="/ui/Asset 33.svg" alt="" class="avatar" />
+            <img class="token-img-add" src="/ui/Asset27.svg" alt="" />
+          </div>
+          <div class="info">
+            <div class="token">
+              <span>$ABCDE</span>
+              <img class="img-1" src="/ui/Asset 25.svg" alt="" />
+              <img class="img-2" src="/ui/Asset 24.svg" alt="" />
+              <img class="img-3" src="/src/assets/Asset16.svg" alt="" />
+              <img class="img-4" src="/ui/Asset 15.svg" alt="" />
+              <img class="img-5" src="/ui/Asset 14.svg" alt="" />
+            </div>
+            <div class="vol">
+              <span class="vol-1">Vol.</span>
+              <span class="vol-2">$12.15M</span>
+              <span class="vol-3">MCAP.</span>
+              <span class="vol-4">$14.56M</span>
+            </div>
+          </div>
+          <div class="info-right">
+            <div class="info-1">$0.00021</div>
+            <div class="info-2">+22.46</div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list">
+        <li class="item">
+          <img class="collect" src="/ui/Asset 93.svg" alt="" />
+          <div class="token-img">
+            <img src="/ui/Asset 33.svg" alt="" class="avatar" />
+            <img class="token-img-add" src="/ui/Asset27.svg" alt="" />
+          </div>
+          <div class="info">
+            <div class="token">
+              <span>$ABCDE</span>
+              <img class="img-1" src="/ui/Asset 25.svg" alt="" />
+              <img class="img-2" src="/ui/Asset 24.svg" alt="" />
+              <img class="img-3" src="/src/assets/Asset16.svg" alt="" />
+              <img class="img-4" src="/ui/Asset 15.svg" alt="" />
+              <img class="img-5" src="/ui/Asset 14.svg" alt="" />
+            </div>
+            <div class="vol">
+              <span class="vol-1">Vol.</span>
+              <span class="vol-2">$12.15M</span>
+              <span class="vol-3">MCAP.</span>
+              <span class="vol-4">$14.56M</span>
+            </div>
+          </div>
+          <div class="info-right">
+            <div class="info-1">$0.00021</div>
+            <div class="info-2">+22.46</div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list">
+        <li class="item">
+          <img class="collect" src="/ui/Asset 93.svg" alt="" />
+          <div class="token-img">
+            <img src="/ui/Asset 33.svg" alt="" class="avatar" />
+            <img class="token-img-add" src="/ui/Asset27.svg" alt="" />
+          </div>
+          <div class="info">
+            <div class="token">
+              <span>$ABCDE</span>
+              <img class="img-1" src="/ui/Asset 25.svg" alt="" />
+              <img class="img-2" src="/ui/Asset 24.svg" alt="" />
+              <img class="img-3" src="/src/assets/Asset16.svg" alt="" />
+              <img class="img-4" src="/ui/Asset 15.svg" alt="" />
+              <img class="img-5" src="/ui/Asset 14.svg" alt="" />
+            </div>
+            <div class="vol">
+              <span class="vol-1">Vol.</span>
+              <span class="vol-2">$12.15M</span>
+              <span class="vol-3">MCAP.</span>
+              <span class="vol-4">$14.56M</span>
+            </div>
+          </div>
+          <div class="info-right">
+            <div class="info-1">$0.00021</div>
+            <div class="info-2">+22.46</div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list">
+        <li class="item">
+          <img class="collect" src="/ui/Asset 93.svg" alt="" />
+          <div class="token-img">
+            <img src="/ui/Asset 33.svg" alt="" class="avatar" />
+            <img class="token-img-add" src="/ui/Asset27.svg" alt="" />
+          </div>
+          <div class="info">
+            <div class="token">
+              <span>$ABCDE</span>
+              <img class="img-1" src="/ui/Asset 25.svg" alt="" />
+              <img class="img-2" src="/ui/Asset 24.svg" alt="" />
+              <img class="img-3" src="/src/assets/Asset16.svg" alt="" />
+              <img class="img-4" src="/ui/Asset 15.svg" alt="" />
+              <img class="img-5" src="/ui/Asset 14.svg" alt="" />
+            </div>
+            <div class="vol">
+              <span class="vol-1">Vol.</span>
+              <span class="vol-2">$12.15M</span>
+              <span class="vol-3">MCAP.</span>
+              <span class="vol-4">$14.56M</span>
+            </div>
+          </div>
+          <div class="info-right">
+            <div class="info-1">$0.00021</div>
+            <div class="info-2">+22.46</div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list">
+        <li class="item">
+          <img class="collect" src="/ui/Asset 93.svg" alt="" />
+          <div class="token-img">
+            <img src="/ui/Asset 33.svg" alt="" class="avatar" />
+            <img class="token-img-add" src="/ui/Asset27.svg" alt="" />
+          </div>
+          <div class="info">
+            <div class="token">
+              <span>$ABCDE</span>
+              <img class="img-1" src="/ui/Asset 25.svg" alt="" />
+              <img class="img-2" src="/ui/Asset 24.svg" alt="" />
+              <img class="img-3" src="/src/assets/Asset16.svg" alt="" />
+              <img class="img-4" src="/ui/Asset 15.svg" alt="" />
+              <img class="img-5" src="/ui/Asset 14.svg" alt="" />
+            </div>
+            <div class="vol">
+              <span class="vol-1">Vol.</span>
+              <span class="vol-2">$12.15M</span>
+              <span class="vol-3">MCAP.</span>
+              <span class="vol-4">$14.56M</span>
+            </div>
+          </div>
+          <div class="info-right">
+            <div class="info-1">$0.00021</div>
+            <div class="info-2">+22.46</div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list">
+        <li class="item">
+          <img class="collect" src="/ui/Asset 93.svg" alt="" />
+          <div class="token-img">
+            <img src="/ui/Asset 33.svg" alt="" class="avatar" />
+            <img class="token-img-add" src="/ui/Asset27.svg" alt="" />
+          </div>
+          <div class="info">
+            <div class="token">
+              <span>$ABCDE</span>
+              <img class="img-1" src="/ui/Asset 25.svg" alt="" />
+              <img class="img-2" src="/ui/Asset 24.svg" alt="" />
+              <img class="img-3" src="/src/assets/Asset16.svg" alt="" />
+              <img class="img-4" src="/ui/Asset 15.svg" alt="" />
+              <img class="img-5" src="/ui/Asset 14.svg" alt="" />
+            </div>
+            <div class="vol">
+              <span class="vol-1">Vol.</span>
+              <span class="vol-2">$12.15M</span>
+              <span class="vol-3">MCAP.</span>
+              <span class="vol-4">$14.56M</span>
+            </div>
+          </div>
+          <div class="info-right">
+            <div class="info-1">$0.00021</div>
+            <div class="info-2">+22.46</div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list">
+        <li class="item">
+          <img class="collect" src="/ui/Asset 93.svg" alt="" />
+          <div class="token-img">
+            <img src="/ui/Asset 33.svg" alt="" class="avatar" />
+            <img class="token-img-add" src="/ui/Asset27.svg" alt="" />
+          </div>
+          <div class="info">
+            <div class="token">
+              <span>$ABCDE</span>
+              <img class="img-1" src="/ui/Asset 25.svg" alt="" />
+              <img class="img-2" src="/ui/Asset 24.svg" alt="" />
+              <img class="img-3" src="/src/assets/Asset16.svg" alt="" />
+              <img class="img-4" src="/ui/Asset 15.svg" alt="" />
+              <img class="img-5" src="/ui/Asset 14.svg" alt="" />
+            </div>
+            <div class="vol">
+              <span class="vol-1">Vol.</span>
+              <span class="vol-2">$12.15M</span>
+              <span class="vol-3">MCAP.</span>
+              <span class="vol-4">$14.56M</span>
+            </div>
+          </div>
+          <div class="info-right">
+            <div class="info-1">$0.00021</div>
+            <div class="info-2">+22.46</div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list">
+        <li class="item">
+          <img class="collect" src="/ui/Asset 93.svg" alt="" />
+          <div class="token-img">
+            <img src="/ui/Asset 33.svg" alt="" class="avatar" />
+            <img class="token-img-add" src="/ui/Asset27.svg" alt="" />
+          </div>
+          <div class="info">
+            <div class="token">
+              <span>$ABCDE</span>
+              <img class="img-1" src="/ui/Asset 25.svg" alt="" />
+              <img class="img-2" src="/ui/Asset 24.svg" alt="" />
+              <img class="img-3" src="/src/assets/Asset16.svg" alt="" />
+              <img class="img-4" src="/ui/Asset 15.svg" alt="" />
+              <img class="img-5" src="/ui/Asset 14.svg" alt="" />
+            </div>
+            <div class="vol">
+              <span class="vol-1">Vol.</span>
+              <span class="vol-2">$12.15M</span>
+              <span class="vol-3">MCAP.</span>
+              <span class="vol-4">$14.56M</span>
+            </div>
+          </div>
+          <div class="info-right">
+            <div class="info-1">$0.00021</div>
+            <div class="info-2">+22.46</div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list">
+        <li class="item">
+          <img class="collect" src="/ui/Asset 93.svg" alt="" />
+          <div class="token-img">
+            <img src="/ui/Asset 33.svg" alt="" class="avatar" />
+            <img class="token-img-add" src="/ui/Asset27.svg" alt="" />
+          </div>
+          <div class="info">
+            <div class="token">
+              <span>$ABCDE</span>
+              <img class="img-1" src="/ui/Asset 25.svg" alt="" />
+              <img class="img-2" src="/ui/Asset 24.svg" alt="" />
+              <img class="img-3" src="/src/assets/Asset16.svg" alt="" />
+              <img class="img-4" src="/ui/Asset 15.svg" alt="" />
+              <img class="img-5" src="/ui/Asset 14.svg" alt="" />
+            </div>
+            <div class="vol">
+              <span class="vol-1">Vol.</span>
+              <span class="vol-2">$12.15M</span>
+              <span class="vol-3">MCAP.</span>
+              <span class="vol-4">$14.56M</span>
+            </div>
+          </div>
+          <div class="info-right">
+            <div class="info-1">$0.00021</div>
+            <div class="info-2">+22.46</div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list">
+        <li class="item">
+          <img class="collect" src="/ui/Asset 93.svg" alt="" />
+          <div class="token-img">
+            <img src="/ui/Asset 33.svg" alt="" class="avatar" />
+            <img class="token-img-add" src="/ui/Asset27.svg" alt="" />
+          </div>
+          <div class="info">
+            <div class="token">
+              <span>$ABCDE</span>
+              <img class="img-1" src="/ui/Asset 25.svg" alt="" />
+              <img class="img-2" src="/ui/Asset 24.svg" alt="" />
+              <img class="img-3" src="/src/assets/Asset16.svg" alt="" />
+              <img class="img-4" src="/ui/Asset 15.svg" alt="" />
+              <img class="img-5" src="/ui/Asset 14.svg" alt="" />
+            </div>
+            <div class="vol">
+              <span class="vol-1">Vol.</span>
+              <span class="vol-2">$12.15M</span>
+              <span class="vol-3">MCAP.</span>
+              <span class="vol-4">$14.56M</span>
+            </div>
+          </div>
+          <div class="info-right">
+            <div class="info-1">$0.00021</div>
+            <div class="info-2">+22.46</div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list">
+        <li class="item">
+          <img class="collect" src="/ui/Asset 93.svg" alt="" />
+          <div class="token-img">
+            <img src="/ui/Asset 33.svg" alt="" class="avatar" />
+            <img class="token-img-add" src="/ui/Asset27.svg" alt="" />
+          </div>
+          <div class="info">
+            <div class="token">
+              <span>$ABCDE</span>
+              <img class="img-1" src="/ui/Asset 25.svg" alt="" />
+              <img class="img-2" src="/ui/Asset 24.svg" alt="" />
+              <img class="img-3" src="/src/assets/Asset16.svg" alt="" />
+              <img class="img-4" src="/ui/Asset 15.svg" alt="" />
+              <img class="img-5" src="/ui/Asset 14.svg" alt="" />
+            </div>
+            <div class="vol">
+              <span class="vol-1">Vol.</span>
+              <span class="vol-2">$12.15M</span>
+              <span class="vol-3">MCAP.</span>
+              <span class="vol-4">$14.56M</span>
+            </div>
+          </div>
+          <div class="info-right">
+            <div class="info-1">$0.00021</div>
+            <div class="info-2">+22.46</div>
+          </div>
         </li>
       </ul>
     </div>
@@ -122,15 +433,73 @@
 .list-container {
   margin: 0 8px;
   .list {
+    margin: 20px 0 10px 0;
     .item {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       .collect {
         width: 12px;
       }
+      .token-img {
+        position: relative;
+        .token-img-add {
+          position: absolute;
+          right: 3px;
+          bottom: 0;
+          width: 12px;
+        }
+      }
+
       .avatar {
         width: 34px;
+        margin: 0 6px;
+      }
+      .info {
+        font-size: 13px;
+        color: white;
+        .token {
+          display: flex;
+          gap: 6px;
+          .img-1,
+          .img-2 {
+            width: 11px;
+          }
+          .img-3,
+          .img-4,
+          .img-5 {
+            width: 8px;
+          }
+        }
+        .vol {
+          margin: 2px 0 0 0;
+          color: $lightColor;
+          .vol-1,
+          .vol-3 {
+            font-size: 8px;
+            font-weight: normal;
+          }
+          .vol-2,
+          .vol-4 {
+            font-size: 10px;
+            font-weight: bold;
+            margin-right: 4px;
+          }
+        }
+      }
+      .info-right {
+        margin-left: auto;
+        font-size: 13px;
+        color: white;
+        text-align: right;
+        .info-1 {
+          font-size: 13px;
+        }
+        .info-2 {
+          font-size: 11px;
+          margin-top: 2px;
+          color: #2bffbc;
+        }
       }
     }
   }

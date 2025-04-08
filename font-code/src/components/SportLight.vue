@@ -22,6 +22,16 @@
         <span class="price">Price</span>| <span class="change">Change</span>%
       </div>
     </div>
+    <div class="list-container">
+      <ul class="list">
+        <li class="item">
+          <img class="collect" src="/ui/Asset 93.svg" alt="" />
+          <img src="/ui/Asset 33.svg" alt="" class="avatar" />
+          <div class="info"></div>
+          <div class="info"></div>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -105,6 +115,23 @@
 
     img {
       width: 8px;
+    }
+  }
+}
+
+.list-container {
+  margin: 0 8px;
+  .list {
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .collect {
+        width: 12px;
+      }
+      .avatar {
+        width: 34px;
+      }
     }
   }
 }

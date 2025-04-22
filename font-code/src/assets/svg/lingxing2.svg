@@ -1,0 +1,9 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M50 98C76.5097 98 98 76.5097 98 50C98 23.4903 76.5097 2 50 2C23.4903 2 2 23.4903 2 50C2 76.5097 23.4903 98 50 98Z" fill="black"/>
+<path d="M49.99 16.91V41.38L70.67 50.62L49.99 16.91Z" fill="white" fill-opacity="0.6"/>
+<path d="M49.99 16.91L29.31 50.62L49.99 41.38V16.91Z" fill="white"/>
+<path d="M49.99 83.09L70.68 54.46L49.99 66.46V83.09Z" fill="white" fill-opacity="0.6"/>
+<path d="M49.99 83.09V66.46L29.31 54.46L49.99 83.09Z" fill="white"/>
+<path d="M49.99 62.62L70.67 50.61L49.99 41.38V62.62Z" fill="white" fill-opacity="0.2"/>
+<path d="M29.31 50.61L49.99 62.62V41.38L29.31 50.61Z" fill="white" fill-opacity="0.6"/>
+</svg>

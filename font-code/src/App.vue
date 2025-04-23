@@ -6,8 +6,12 @@
   <router-view />
 </template>
 
-<style>
+<style lang="scss" scoped>
+
 body {
+
+
+  font-size: 14px;
   background-color: #242021;
 }
 </style>

@@ -23,7 +23,7 @@
           <img src="/ui/Asset 25.svg" alt="" />
           <img src="/ui/Asset 24.svg" alt="" />
           <span>Raydium</span>
-          <div>CLMM</div>
+          <div>AMM</div>
         </div>
       </div>
       <div class="icon">
@@ -37,6 +37,20 @@
     <div class="progress-container">
       <span>100%</span>
       <div class="progress-bar orange-bar"></div>
+    </div>
+
+    <!-- Quick Explore -->
+    <div class="quick-Exp">
+      <div class="quick-Exp-title">
+        <span>Quick Explore</span>
+        <SvgIcon class="icon" name="sodian"></SvgIcon>
+      </div>
+      <div class="quick-Exp-right">
+        <div class="right-item ticker">Ticker</div>
+        <div class="right-item cs">CA</div>
+        <div class="right-item f100">F100</div>
+        <div class="right-item bubble">Bubble</div>
+      </div>
     </div>
 
     <!-- 警告提示区 -->
@@ -263,9 +277,16 @@
  * 5. 风险检查面板
  */
 // 组件逻辑可以在这里添加
+
+// 示例数据
+// const tokenData = {}
+
+fetch('/api/api/coins/getAll') // 改为相对路径，由Vite代理
+  .then((response) => response.json())
+  .then((data) => console.log(data));
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 /* 货币区域样式 */
 .coin-profile {
   display: flex;
@@ -296,7 +317,7 @@ div .coin-name {
   gap: 6px;
   font-size: 19px;
   font-weight: bold;
-  color: #fff;
+  color: #d1cdcb;
   margin-bottom: 5px;
   cursor: pointer;
   transition:
@@ -310,7 +331,7 @@ div .coin-name {
 }
 div .coin-name span {
   font-size: 12px;
-  color: #b2a18f;
+  color: #665f59;
 }
 .coin-av {
   flex: 1 1 auto;
@@ -343,6 +364,7 @@ div .coin-name span {
   height: 12px;
   margin-right: 4px;
   cursor: pointer;
+
   transition:
     transform 0.2s ease,
     filter 0.2s ease; /* 交互动效配置 */
@@ -386,7 +408,7 @@ div .coin-name span {
   align-items: center;
   gap: 2px;
   margin-top: 4px;
-  color: #fff;
+  color: #d1cdcb;
 }
 .bit img {
   width: 15px;
@@ -413,10 +435,10 @@ div .coin-name span {
 .bit div {
   margin-left: 2px;
   font-size: 8px;
-  color: #b2a18f;
+  color: #665f59;
   border-radius: 4px;
   padding: 3px;
-  border: 1px solid #b2a18f;
+  border: 1px solid #665f59;
   cursor: pointer;
   transition:
     background-color 0.2s ease,
@@ -453,11 +475,56 @@ div .coin-name span {
   left: 5px;
   top: -7px;
   font-size: 10px;
-  color: #fff;
+  color: #d1cdcb;
 }
 
 .orange-bar {
   background: linear-gradient(90deg, #ff6b00, #ff9d00);
+}
+
+/* Quick Explore 区域 */
+.quick-Exp {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 0;
+  border-top: 1px solid #665f59;
+
+  .quick-Exp-title {
+    color: #665f59;
+    font-family: Inter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+    border-right: 1px solid #665f59;
+
+    .icon {
+      width: 15px;
+      height: 15px;
+      flex-shrink: 0;
+      aspect-ratio: 1/1;
+      margin: 0 5px;
+    }
+  }
+  .quick-Exp-right {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    font-size: 10px;
+    color: #b2a18f;
+    .right-item {
+      text-align: center;
+      width: 46px;
+      height: 22px;
+      line-height: 22px;
+      border-right: 1px solid #665f59;
+    }
+  }
 }
 
 /* 警告区域样式 */
@@ -465,8 +532,8 @@ div .coin-name span {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ff0000;
-  color: #ffa1a1;
+  background-color: rgba(255, 0, 0, 0.2);
+  color: rgba(255, 153, 153, 1);
   font-size: 12px;
   margin: 0 -12px 10px;
   height: 28px;
@@ -497,9 +564,9 @@ div .coin-name span {
 .price-box {
   flex: 1;
   background-color: #141212;
-  border: 1px solid #b2a18f;
+  border: 1px solid #665f59;
   border-radius: 5px;
-  color: #fff;
+  color: #d1cdcb;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -525,7 +592,7 @@ div .coin-name span {
   display: flex;
   flex-direction: column;
   font-size: 12px;
-  color: #fff;
+  color: #d1cdcb;
   gap: 5px;
 }
 
@@ -538,7 +605,7 @@ div .coin-name span {
   flex: 1;
   background-color: #141212;
   height: 38px;
-  border: 1px solid #b2a18f;
+  border: 1px solid #665f59;
   border-radius: 5px;
   padding: 4px 6px;
   display: flex;
@@ -559,7 +626,7 @@ div .coin-name span {
 /* 时间统计区域样式 */
 .time-stats {
   display: flex;
-  border: 1px solid #b2a18f;
+  border: 1px solid #665f59;
   border-radius: 5px 5px 0 0;
 }
 
@@ -570,7 +637,7 @@ div .coin-name span {
   justify-content: center;
   height: 38px;
   text-align: center;
-  border-right: 1px solid #b2a18f;
+  border-right: 1px solid #665f59;
 }
 
 .time-stat:last-child {
@@ -589,7 +656,7 @@ div .coin-name span {
 }
 
 .data-down {
-  border: 1px solid #b2a18f;
+  border: 1px solid #665f59;
   border-top: none;
   margin-top: -5px;
   padding: 12px;
@@ -600,7 +667,7 @@ div .coin-name span {
 }
 .line {
   position: absolute;
-  border: 0.5px solid #b2a18f;
+  border: 0.5px solid #665f59;
   height: 80%;
   top: 50%;
   left: 30%;
@@ -724,7 +791,7 @@ div .coin-name span {
 
 .pooled-value {
   font-size: 12px;
-  color: white;
+  color: #d1cdcb;
 }
 
 .pooled-usd {
@@ -826,7 +893,7 @@ div .coin-name span {
   align-items: center;
   font-size: 12px;
   font-weight: bold;
-  color: #4caf50;
+  color: #2bffbc;
 }
 
 .risk-score {
@@ -886,7 +953,7 @@ div .coin-name span {
 }
 
 .risk-value.zero {
-  color: #4caf50;
+  color: #2bffbc;
   cursor: pointer;
   transition:
     color 0.2s ease,
@@ -894,7 +961,7 @@ div .coin-name span {
 }
 
 .risk-value.zero:hover {
-  color: #6ecc72;
+  color: #2bffbc;
   text-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 

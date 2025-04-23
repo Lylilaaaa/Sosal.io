@@ -1,0 +1,55 @@
+{
+  // SCSS 相关配置
+  "scss.validate": true,
+  "scss.scannerDepth": 5,
+  "scss.scanImports": true,
+  "editor.quickSuggestions": {
+    "strings": true,
+    "other": true,
+    "comments": false
+  },
+
+  // 启用 VS Code 文件资源管理器中的文件嵌套功能
+  // (将相关文件分组显示，保持项目结构整洁)
+  // "explorer.fileNesting.enabled": true,
+
+  // 定义文件嵌套规则（Glob 模式匹配）
+  "explorer.fileNesting.patterns": {
+    // 将 tsconfig 相关文件嵌套在主配置下
+    "tsconfig.json": "tsconfig.*.json, env.d.ts",
+
+    // 将 Vite 及其测试相关配置嵌套在一起
+    "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
+
+    // 将 package.json 相关的锁文件、配置工具文件嵌套在一起
+    "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .prettier*, prettier*, .editorconfig"
+  },
+
+  // 配置编辑器在保存时的自动修复行为
+  "editor.codeActionsOnSave": {
+    // 显式启用保存时自动修复所有可修复的问题
+    // (需要配合 ESLint/TSLint 等插件使用)
+    "source.fixAll": "explicit"
+  },
+
+  // 启用保存时自动格式化代码功能
+  "editor.formatOnSave": true,
+
+  // 设置默认代码格式化工具为 Prettier
+  // (需先安装 "Prettier - Code formatter" 扩展)
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // 指定 TypeScript 语言服务路径
+  // 使用相对路径指向项目内安装的特定 TypeScript 版本
+  // (确保与项目实际使用的 TS 版本一致)
+  "typescript.tsdk": "./font-code/node_modules/typescript/lib",
+
+  // 配置 ESLint 的工作目录（适用于多项目/复杂目录结构）
+  "eslint.workingDirectories": [
+    // 首先尝试自动检测工作目录
+    { "mode": "auto" },
+
+    // 显式指定一个工作目录路径（用于 monorepo 或特殊项目结构）
+    { "directory": "./font-code" }
+  ]
+}

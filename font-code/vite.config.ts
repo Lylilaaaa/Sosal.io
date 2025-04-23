@@ -7,6 +7,8 @@ import vueDevTools from 'vite-plugin-vue-devtools';
 import autoImport from 'unplugin-auto-import/vite';
 // 导入自动导入组件插件
 import components from 'unplugin-vue-components/vite';
+import path from 'path';
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -14,7 +16,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
     components({
-      dirs: ['./src/components', './src/layout'],
+      dirs: ['./src/components', './src/layouts'],
       dts: './src/types/components.d.ts',
     }),
     autoImport({
@@ -22,6 +24,11 @@ export default defineConfig({
       dts: './src/types/auto-imports.d.ts',
       dirs: ['./src/**/*'],
       vueTemplate: true,
+    }),
+    createSvgIconsPlugin({
+      // 修改这里：匹配你自己的图标目录
+      iconDirs: [path.resolve(process.cwd(), 'src/assets/svg')],
+      symbolId: 'icon-[name]',
     }),
   ],
   resolve: {
@@ -34,6 +41,17 @@ export default defineConfig({
       scss: {
         additionalData: `@use "@/assets/global.scss" as *;`,
         quietDeps: true,
+      },
+    },
+  },
+
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://15.168.90.221:8081', // 后端地址
+        // target: 'https://study.duyiedu.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''), // 重写路径，去掉/api前缀
       },
     },
   },

@@ -349,6 +349,7 @@
 <script setup></script>
 
 <style lang="scss" scoped>
+
 .sportLight {
   .nav {
     display: flex;

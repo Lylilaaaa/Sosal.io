@@ -10,19 +10,17 @@
 
 <script setup></script>
 
-<style scoped>
+<style lang="scss" scoped>
 .layout {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: #665f59; /* 新增布局背景色 */
+  background-color: #242021; /* 新增布局背景色 */
 }
 
 .main-content {
   padding-top: 60px;
-  height: calc(100vh - 60px); /* 修复高度计算 */
-  flex: 1;
-  overflow: auto; /* 允许滚动 */
-  background: #242021; /* 修改为深色背景 */
+  height: 100vh;
+  overflow: hidden;
 }
 </style>

@@ -29,12 +29,12 @@
   </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 /* 顶部导航栏 */
 .navbar {
   height: 60px;
   width: 100%;
-  background-color: #141212;
+  background-color: $darkColor;
   display: flex;
   align-items: center;
   padding: 0 20px;
@@ -129,7 +129,7 @@
 
 .nav-links a {
   font-size: 12px;
-  color: #b2a18f;
+  color: $lightColor;
   text-decoration: none;
   font-weight: bold;
   position: relative;
@@ -444,7 +444,4 @@ i {
 }
 </style>
 
-<script setup>
-import { useRouter } from 'vue-router';
-const router = useRouter();
-</script>
+<script setup></script>

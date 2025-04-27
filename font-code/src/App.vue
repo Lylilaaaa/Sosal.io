@@ -12,6 +12,6 @@ body {
 
 
   font-size: 14px;
-  background-color: #242021;
+  background-color: $bgColor;
 }
 </style>

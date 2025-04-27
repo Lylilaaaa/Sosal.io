@@ -34,7 +34,7 @@
 .navbar {
   height: 60px;
   width: 100%;
-  background-color: $darkColor;
+  background-color: #141212;
   display: flex;
   align-items: center;
   padding: 0 20px;

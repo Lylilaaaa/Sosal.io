@@ -31,7 +31,7 @@ onMounted(() => {
       frameElementId: 'tradingview_widget',
       symbol: 'BINANCE:BTCUSDT', // 默认显示的股票代码
       interval: 'D', // 默认时间周期（D = 日线）
-      hidesidetoolbar: '1', // 隐藏侧边工具栏
+      hidesidetoolbar: '0', // 隐藏侧边工具栏
       symboledit: '1', // 允许编辑股票代码
       saveimage: '1', // 允许保存图表为图片
       toolbarbg: 'f1f3f6', // 工具栏背景色

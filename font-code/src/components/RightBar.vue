@@ -145,14 +145,14 @@
 import SportLight from './SportLight.vue';
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .right-container {
   margin: 8px;
 }
 
 .sosoEarn {
   height: 70px;
-  background-color: #141212;
+  background-color:$darkColor;
   margin-bottom: 8px;
   border-radius: 8px;
   display: flex;

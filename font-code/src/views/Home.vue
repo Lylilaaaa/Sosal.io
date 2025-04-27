@@ -44,7 +44,7 @@
 }
 
 .sidebar {
-  width: 315px;
+  width: 300px;
 }
 
 .content {

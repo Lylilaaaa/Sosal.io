@@ -1,6 +1,7 @@
 <template>
   <div class="sidebar-container">
-    <!-- 货币信息区域 -->
+    <div class="darkBg">
+          <!-- 货币信息区域 -->
     <div class="coin-profile">
       <img src="/ui/Asset 33.svg" alt="" />
       <div class="coin-av">
@@ -60,13 +61,16 @@
       <div class="warning-icon">▼</div>
     </div>
 
+    </div>
+    <div class="lightBg">
+
     <!-- 价格信息区 -->
     <div class="price-section">
       <div class="price-box">
         <div class="price-label">PRICE (SOL)</div>
         <div class="price-value">0.0001436 SOL</div>
       </div>
-      <div class="price-box">
+      <div class="price-box priceBoxR">
         <div class="price-label">PRICE (USD)</div>
         <div class="price-value">$0.02764</div>
       </div>
@@ -263,7 +267,12 @@
     <div class="share-button">
       <!-- 图标占位 -->
     </div>
+    </div>
+
+
   </div>
+
+
 </template>
 
 <script setup>
@@ -287,11 +296,24 @@ fetch('/api/api/coins/getAll') // 改为相对路径，由Vite代理
 </script>
 
 <style lang="scss" scoped>
+
+
 /* 货币区域样式 */
 .coin-profile {
   display: flex;
   width: 100%;
   height: 64px;
+}
+.darkBg {
+  background-color: $darkColor;
+  padding: 8px 12px 0 12px;
+  border-radius: 12px 12px 0 0;
+}
+
+.lightBg {
+  background-color: $mainColorT;
+  padding: 10px 12px;
+
 }
 .coin-profile img {
   width: 54px;
@@ -307,7 +329,7 @@ fetch('/api/api/coins/getAll') // 改为相对路径，由Vite代理
 }
 .sidebar-container {
   margin: 8px;
-  padding: 8px 12px;
+
   background-color: #181616;
   border-radius: 8px;
 }
@@ -488,7 +510,7 @@ div .coin-name span {
   justify-content: space-between;
   width: 100%;
   padding: 8px 0;
-  border-top: 1px solid #665f59;
+  border-top: 0.4px solid #665f59;
 
   .quick-Exp-title {
     color: #665f59;
@@ -500,7 +522,7 @@ div .coin-name span {
     font-weight: 300;
     line-height: normal;
     text-transform: capitalize;
-    border-right: 1px solid #665f59;
+    border-right: 0.4px solid #665f59;
 
     .icon {
       width: 15px;
@@ -522,7 +544,7 @@ div .coin-name span {
       width: 46px;
       height: 22px;
       line-height: 22px;
-      border-right: 1px solid #665f59;
+      border-right: 0.4px solid #665f59;
     }
   }
 }
@@ -535,7 +557,7 @@ div .coin-name span {
   background-color: rgba(255, 0, 0, 0.2);
   color: rgba(255, 153, 153, 1);
   font-size: 12px;
-  margin: 0 -12px 10px;
+  margin: 0 -12px;
   height: 28px;
   cursor: pointer;
   transition:
@@ -559,19 +581,25 @@ div .coin-name span {
   display: flex;
   gap: 5px;
   margin-bottom: 5px;
+
 }
 
 .price-box {
   flex: 1;
-  background-color: #141212;
-  border: 1px solid #665f59;
-  border-radius: 5px;
+  background-color: $mainColor;
+  border: 0.4px solid #665f59;
+  border-radius: 8px 4px 4px 4px;
   color: #d1cdcb;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   padding: 4px 0;
+}
+.priceBoxR{
+  border-radius: 4px 8px 4px 4px;
+
+
 }
 
 .price-label {
@@ -603,9 +631,9 @@ div .coin-name span {
 
 .data-box {
   flex: 1;
-  background-color: #141212;
+
   height: 38px;
-  border: 1px solid #665f59;
+  border: 0.4px solid #665f59;
   border-radius: 5px;
   padding: 4px 6px;
   display: flex;
@@ -626,7 +654,7 @@ div .coin-name span {
 /* 时间统计区域样式 */
 .time-stats {
   display: flex;
-  border: 1px solid #665f59;
+  border: 0.4px solid #665f59;
   border-radius: 5px 5px 0 0;
 }
 
@@ -637,7 +665,7 @@ div .coin-name span {
   justify-content: center;
   height: 38px;
   text-align: center;
-  border-right: 1px solid #665f59;
+  border-right: 0.4px solid #665f59;
 }
 
 .time-stat:last-child {
@@ -656,7 +684,7 @@ div .coin-name span {
 }
 
 .data-down {
-  border: 1px solid #665f59;
+  border: 0.4px solid #665f59;
   border-top: none;
   margin-top: -5px;
   padding: 12px;
@@ -667,7 +695,7 @@ div .coin-name span {
 }
 .line {
   position: absolute;
-  border: 0.5px solid #665f59;
+  border-left: 0.4px solid #665f59;
   height: 80%;
   top: 50%;
   left: 30%;
@@ -978,4 +1006,7 @@ div .coin-name span {
 .share-button:hover {
   transform: scale(1.05);
 }
+
+
+
 </style>

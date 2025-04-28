@@ -13,7 +13,20 @@
           <img src="/ui/Asset 77.svg" alt="" />
           <img src="/ui/Asset 78.svg" alt="" />
           <img src="/ui/Asset 78.svg" alt="" />
-          <img class="share" src="/ui/Asset 57.svg" alt="" />
+          <div class="share">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+            >
+              <path
+                d="M13.2732 11.1078C12.5064 11.1078 11.8224 11.4444 11.3418 11.9682L7.21622 9.5868C7.29542 9.3366 7.35122 9.0738 7.35122 8.7966C7.35122 8.5194 7.29722 8.2584 7.21622 8.0064L11.3418 5.625C11.8224 6.1506 12.5064 6.4872 13.2732 6.4872C14.7222 6.4872 15.8994 5.31 15.8994 3.861C15.8994 2.412 14.7222 1.2366 13.2732 1.2366C11.8242 1.2366 10.6488 2.4138 10.6488 3.861C10.6488 4.1382 10.7028 4.3992 10.7838 4.6494L6.65822 7.0308C6.17762 6.5052 5.49362 6.1704 4.72682 6.1704C3.27962 6.1704 2.10242 7.3476 2.10242 8.7966C2.10242 10.2456 3.27962 11.421 4.72682 11.421C5.49362 11.421 6.17762 11.0862 6.65822 10.5606L10.7838 12.942C10.7046 13.1922 10.6488 13.4532 10.6488 13.7304C10.6488 15.1776 11.826 16.3566 13.2732 16.3566C14.7204 16.3566 15.8994 15.1794 15.8994 13.7304C15.8994 12.2814 14.7222 11.106 13.2732 11.106V11.1078Z"
+                fill="#665F59"
+              />
+            </svg>
+          </div>
         </div>
         <div class="secondLine">
           <span class="smallText">7d Pnl</span>
@@ -117,6 +130,63 @@
           <span>Advanced Settings</span>
           <img class="right" src="/ui/Asset 80.svg" alt="" />
         </div>
+        <!-- Advanced Settings组件  -->
+        <div class="advanced">
+          <div class="mev-container">
+            <span class="text">MEV PROTECTION:</span>
+            <div class="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+              >
+                <path
+                  d="M19.5 9.5H5.5C3.84315 9.5 2.5 10.8431 2.5 12.5C2.5 14.1569 3.84315 15.5 5.5 15.5H19.5C21.1569 15.5 22.5 14.1569 22.5 12.5C22.5 10.8431 21.1569 9.5 19.5 9.5Z"
+                  fill="#FF8000"
+                />
+                <path
+                  d="M16.5 18.5C19.8137 18.5 22.5 15.8137 22.5 12.5C22.5 9.18629 19.8137 6.5 16.5 6.5C13.1863 6.5 10.5 9.18629 10.5 12.5C10.5 15.8137 13.1863 18.5 16.5 18.5Z"
+                  fill="#B2A18F"
+                />
+              </svg>
+            </div>
+            <div class="info">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+              >
+                <path
+                  d="M5.99995 1.20001C3.35275 1.20001 1.19995 3.35281 1.19995 6.00001C1.19995 8.64721 3.35275 10.8 5.99995 10.8C8.64715 10.8 10.8 8.64721 10.8 6.00001C10.8 3.35281 8.64715 1.20001 5.99995 1.20001ZM5.99995 9.93601C3.83035 9.93601 2.06395 8.16961 2.06395 6.00001C2.06395 3.83041 3.83035 2.06401 5.99995 2.06401C8.16955 2.06401 9.93595 3.83041 9.93595 6.00001C9.93595 8.16961 8.16955 9.93601 5.99995 9.93601Z"
+                  fill="#3D3935"
+                />
+                <path
+                  d="M5.99995 4.88281C5.66875 4.88281 5.39995 5.15161 5.39995 5.48281V8.62081C5.39995 8.95201 5.66875 9.22081 5.99995 9.22081C6.33115 9.22081 6.59995 8.95201 6.59995 8.62081V5.48281C6.59995 5.15161 6.33115 4.88281 5.99995 4.88281Z"
+                  fill="#3D3935"
+                />
+                <path
+                  d="M6.42115 3.27001C6.36955 3.21001 6.30115 3.16681 6.23275 3.14161C6.07795 3.08161 5.91595 3.08161 5.76955 3.14161C5.70115 3.16681 5.63275 3.21001 5.57155 3.27001C5.51995 3.33001 5.47795 3.39001 5.44315 3.46801C5.41675 3.53641 5.39995 3.61321 5.39995 3.69121C5.39995 3.77641 5.41795 3.85441 5.44315 3.92281C5.47795 4.00081 5.51995 4.05961 5.57155 4.12081C5.63155 4.18081 5.69995 4.22401 5.76955 4.24921C5.84635 4.28401 5.92315 4.30081 6.00115 4.30081C6.07915 4.30081 6.15595 4.28401 6.23275 4.24921C6.30115 4.22281 6.36955 4.18081 6.42115 4.12081C6.48115 4.06081 6.52435 4.00081 6.55795 3.92281C6.58435 3.85441 6.60115 3.77761 6.60115 3.69121C6.60115 3.61441 6.58435 3.53761 6.55795 3.46801C6.52315 3.39121 6.48115 3.33121 6.42115 3.27001Z"
+                  fill="#3D3935"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="slippage-container">
+            <span class="text">SLIPPAGE LIMIT:</span>
+            <div class="button">
+              <input type="text" />
+              <div class="custom">Custom your slippage limit</div>
+            </div>
+          </div>
+          <div class="priority-container">
+            <span class="text">PRIORITY FEE:</span>
+          </div>
+        </div>
         <div class="setting">
           <img class="left" src="/ui/Asset 49.svg" alt="" />
           <span>Auto TP/SL Settings</span>
@@ -152,7 +222,7 @@ import SportLight from './SportLight.vue';
 
 .sosoEarn {
   height: 70px;
-  background-color:$darkColor;
+  background-color: $darkColor;
   margin-bottom: 8px;
   border-radius: 8px;
   display: flex;
@@ -197,7 +267,7 @@ import SportLight from './SportLight.vue';
   mask-composite: exclude;
   padding: 1px;
 
-  border: 1px solid transparent;
+  border: 0.4px solid transparent;
   border-image: linear-gradient(45deg, #e319a7, #9804dc, #4404c3) 1;
 }
 
@@ -230,10 +300,7 @@ import SportLight from './SportLight.vue';
 }
 
 .info .firstLine .share {
-  height: 16px;
-  flex: auto;
-  margin-left: auto;
-  flex-grow: 0;
+  margin-right: 7px;
 }
 
 .smallText {
@@ -265,6 +332,7 @@ import SportLight from './SportLight.vue';
 
 .thirdLine {
   display: flex;
+  font-size: 7px;
   gap: 3px;
   margin-top: 8px;
   white-space: nowrap;
@@ -292,7 +360,7 @@ import SportLight from './SportLight.vue';
 .defaultButton {
   font-size: 14px;
   height: 38px;
-  border: 1px solid #b2a18f;
+  border: 0.4px solid #b2a18f;
   flex-grow: 1;
   text-align: center;
   color: #b2a18f;
@@ -332,7 +400,7 @@ import SportLight from './SportLight.vue';
   width: 150px;
   height: 27px;
   color: #b2a18f;
-  border: 1px solid #b2a18f;
+  border: 0.4px solid #b2a18f;
   line-height: 27px;
   border-radius: 4px;
 }
@@ -366,7 +434,7 @@ span.text {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #b2a18f;
+  border: 0.4px solid #b2a18f;
   border-radius: 4px;
   padding: 4px;
 }
@@ -374,7 +442,7 @@ span.text {
   width: 230px;
   height: 27px;
   background-color: #181616;
-  border: 1px solid #b2a18f;
+  border: 0.4px solid #b2a18f;
   border-radius: 4px;
   color: #b2a18f;
   font-size: 12px;
@@ -410,7 +478,7 @@ input::placeholder {
 }
 .clickPrice {
   width: 70px;
-  border: 1px solid #b2a18f;
+  border: 0.4px solid #b2a18f;
   gap: 5px;
   padding: 8px;
   display: flex;
@@ -452,13 +520,74 @@ input::placeholder {
   margin: 2px;
 }
 
+.advanced {
+  margin-top: 15px;
+  .mev-container {
+    display: flex;
+    // justify-content: start;
+    align-items: center;
+    .text {
+      color: #665f59;
+      font-family: Inter;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+    .button {
+      margin-left: 6px;
+    }
+    .info {
+      // flex-shrink: 0;
+      margin-left: 4px;
+      padding: 0;
+    }
+  }
+
+  .slippage-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .text {
+      color: #665f59;
+      font-family: Inter;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+    .button {
+      input {
+        width: 174px;
+        height: 27px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        border: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+        background: var(--sosal_Dark3_181616, #181616);
+      }
+
+      .custom {
+        color: var(--sosal_Lighten2_665F59, #665f59);
+        font-family: Inter;
+        font-size: 7px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
 /* setting样式 */
 .setting {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid rgba(178, 161, 143, 40%);
-  border-bottom: 1px solid rgba(178, 161, 143, 40%);
+  border-top: 0.4px solid rgba(178, 161, 143, 40%);
+  border-bottom: 0.4px solid rgba(178, 161, 143, 40%);
   margin: 4px 0;
   padding: 8px 0;
   color: white;

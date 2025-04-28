@@ -52,7 +52,7 @@
 }
 
 .rightbar {
-  width: 315px;
+  width: 300px;
   height: 100%;
 }
 </style>

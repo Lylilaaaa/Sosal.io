@@ -95,11 +95,11 @@
 
       <!-- 时间交易数据 -->
       <div class="time-stats">
-        <div class="time-stat">
+        <div class="time-stat ">
           <div class="time-label">5M</div>
           <div class="time-value positive">+138%</div>
         </div>
-        <div class="time-stat">
+        <div class="time-stat time-select">
           <div class="time-label">1H</div>
           <div class="time-value negative">-684%</div>
         </div>
@@ -604,7 +604,7 @@ div .coin-name span {
 
 .price-label {
   font-size: 10px;
-  color: #b2a18f;
+  color: #665f59;
   height: 10px;
   margin-bottom: 3px;
   line-height: 10px;
@@ -668,15 +668,25 @@ div .coin-name span {
   border-right: 0.4px solid #665f59;
 }
 
+.time-stat.time-select{
+  background-color: #242021;
+}
+
+
+
 .time-stat:last-child {
   border-right: none;
 }
+
+
 
 .time-label {
   font-size: 10px;
   color: #b2a18f;
   margin-bottom: 2px;
 }
+
+
 
 .time-value {
   font-size: 12px;

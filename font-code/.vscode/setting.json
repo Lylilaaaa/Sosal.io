@@ -1,0 +1,7 @@
+{
+    "scss.validate": true,
+    "scss.lint.unknownAtRules": "ignore",
+    "path-intellisense.mappings": {
+      "@": "${workspaceRoot}/src"
+    }
+}

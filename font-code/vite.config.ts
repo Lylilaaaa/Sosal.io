@@ -49,7 +49,6 @@ export default defineConfig({
     proxy: {
       '/api': {
         target: 'http://15.168.90.221:8081', // 后端地址
-        // target: 'https://study.duyiedu.com',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''), // 重写路径，去掉/api前缀
       },

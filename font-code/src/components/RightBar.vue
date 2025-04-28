@@ -38,7 +38,7 @@
           <span class="smallText">Referral:</span>
           <img src="/ui/Asset 74.svg" alt="" />
           <span class="smallText bold">27</span>
-          <span class="smallText">Fees Rebat:</span>
+          <span class="smallText">Rewards:</span>
           <img src="/ui/Asset 75.svg" alt="" />
           <span class="smallText bold">1.2815</span>
           <span class="smallText">Points:</span>
@@ -179,12 +179,82 @@
           <div class="slippage-container">
             <span class="text">SLIPPAGE LIMIT:</span>
             <div class="button">
-              <input type="text" />
+              <div class="input-wrapper">
+                <input type="text" class="input" placeholder="input slippage limit" />
+                <span class="unit">%</span>
+              </div>
               <div class="custom">Custom your slippage limit</div>
             </div>
           </div>
           <div class="priority-container">
             <span class="text">PRIORITY FEE:</span>
+            <div class="info">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+              >
+                <path
+                  d="M5.99995 1.20001C3.35275 1.20001 1.19995 3.35281 1.19995 6.00001C1.19995 8.64721 3.35275 10.8 5.99995 10.8C8.64715 10.8 10.8 8.64721 10.8 6.00001C10.8 3.35281 8.64715 1.20001 5.99995 1.20001ZM5.99995 9.93601C3.83035 9.93601 2.06395 8.16961 2.06395 6.00001C2.06395 3.83041 3.83035 2.06401 5.99995 2.06401C8.16955 2.06401 9.93595 3.83041 9.93595 6.00001C9.93595 8.16961 8.16955 9.93601 5.99995 9.93601Z"
+                  fill="#3D3935"
+                />
+                <path
+                  d="M5.99995 4.88281C5.66875 4.88281 5.39995 5.15161 5.39995 5.48281V8.62081C5.39995 8.95201 5.66875 9.22081 5.99995 9.22081C6.33115 9.22081 6.59995 8.95201 6.59995 8.62081V5.48281C6.59995 5.15161 6.33115 4.88281 5.99995 4.88281Z"
+                  fill="#3D3935"
+                />
+                <path
+                  d="M6.42115 3.27001C6.36955 3.21001 6.30115 3.16681 6.23275 3.14161C6.07795 3.08161 5.91595 3.08161 5.76955 3.14161C5.70115 3.16681 5.63275 3.21001 5.57155 3.27001C5.51995 3.33001 5.47795 3.39001 5.44315 3.46801C5.41675 3.53641 5.39995 3.61321 5.39995 3.69121C5.39995 3.77641 5.41795 3.85441 5.44315 3.92281C5.47795 4.00081 5.51995 4.05961 5.57155 4.12081C5.63155 4.18081 5.69995 4.22401 5.76955 4.24921C5.84635 4.28401 5.92315 4.30081 6.00115 4.30081C6.07915 4.30081 6.15595 4.28401 6.23275 4.24921C6.30115 4.22281 6.36955 4.18081 6.42115 4.12081C6.48115 4.06081 6.52435 4.00081 6.55795 3.92281C6.58435 3.85441 6.60115 3.77761 6.60115 3.69121C6.60115 3.61441 6.58435 3.53761 6.55795 3.46801C6.52315 3.39121 6.48115 3.33121 6.42115 3.27001Z"
+                  fill="#3D3935"
+                />
+              </svg>
+            </div>
+            <div class="priority-button">
+              <div class="default">DEFAULT</div>
+              <div class="auto">AUTO</div>
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <circle cx="6" cy="6" r="6" fill="#B2A18F" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="speed-container">
+            <div class="speed speed1">
+              <div class="top">
+                <span class="text1">speed</span>
+                <span class="text2">x1</span>
+              </div>
+              <div class="bottom text3">0.002SOL</div>
+            </div>
+            <div class="speed speed5">
+              <div class="top">
+                <span class="text1">speed</span>
+                <span class="text2">x5</span>
+              </div>
+              <div class="bottom text3">0.008SOL</div>
+            </div>
+            <div class="speed speed10">
+              <div class="top">
+                <span class="text1">speed</span>
+                <span class="text2">x10 </span>
+              </div>
+              <div class="bottom text3">0.012SOL</div>
+            </div>
+            <div class="speed speed20">
+              <div class="top">
+                <span class="text1">speed</span>
+                <span class="text2">x20</span>
+              </div>
+              <div class="bottom text3">0.018SOL</div>
+            </div>
           </div>
         </div>
         <div class="setting">
@@ -207,7 +277,7 @@
       </div>
     </div>
 
-    <SportLight />
+    <SportLight class="sport-light" />
   </div>
 </template>
 
@@ -216,6 +286,7 @@ import SportLight from './SportLight.vue';
 </script>
 
 <style lang="scss" scoped>
+$darkColor: #181616;
 .right-container {
   margin: 8px;
 }
@@ -279,7 +350,6 @@ import SportLight from './SportLight.vue';
 }
 
 .info {
-  flex: auto;
   border-radius: 0 8px 8px 0;
   padding: 8px;
   margin-left: 17px;
@@ -333,7 +403,7 @@ import SportLight from './SportLight.vue';
 .thirdLine {
   display: flex;
   font-size: 7px;
-  gap: 3px;
+
   margin-top: 8px;
   white-space: nowrap;
 }
@@ -425,7 +495,7 @@ span.text {
   margin-right: 5px;
 }
 
-.sportLight {
+.sport-light {
   background-color: #181616;
   border-radius: 8px;
 }
@@ -441,12 +511,14 @@ span.text {
 .price input {
   width: 230px;
   height: 27px;
+  line-height: 27px;
   background-color: #181616;
   border: 0.4px solid #b2a18f;
   border-radius: 4px;
   color: #b2a18f;
   font-size: 12px;
   outline: none;
+
   border: 0;
   /* input默认文字样式设置 */
 }
@@ -522,10 +594,11 @@ input::placeholder {
 
 .advanced {
   margin-top: 15px;
+
   .mev-container {
     display: flex;
-    // justify-content: start;
     align-items: center;
+
     .text {
       color: #665f59;
       font-family: Inter;
@@ -535,11 +608,8 @@ input::placeholder {
       line-height: normal;
       text-transform: capitalize;
     }
-    .button {
-      margin-left: 6px;
-    }
+
     .info {
-      // flex-shrink: 0;
       margin-left: 4px;
       padding: 0;
     }
@@ -549,6 +619,8 @@ input::placeholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 12px 0;
+
     .text {
       color: #665f59;
       font-family: Inter;
@@ -558,18 +630,66 @@ input::placeholder {
       line-height: normal;
       text-transform: capitalize;
     }
+
     .button {
-      input {
-        width: 174px;
-        height: 27px;
-        flex-shrink: 0;
-        border-radius: 4px;
-        border: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
-        background: var(--sosal_Dark3_181616, #181616);
+      .input-wrapper {
+        position: relative;
+        display: block;
+        align-items: center;
+
+        input {
+          width: 174px;
+          height: 27px;
+          padding: 0 30px 0 8px;
+          line-height: 27px;
+          font-size: 10px;
+          padding-right: 30px;
+          flex-shrink: 0;
+          border-radius: 4px;
+          border: 0.4px solid #665f59;
+          background: #181616;
+          box-sizing: border-box;
+          vertical-align: middle;
+          color: #d1cdcb;
+
+          &::placeholder {
+            color: #3d3935;
+            font-family: Inter;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 27px;
+            vertical-align: middle;
+          }
+
+          &:focus {
+            outline: none;
+            opacity: 1;
+            background: #242021;
+            box-shadow:
+              0 0 0 1px rgba(255, 107, 0, 0.3),
+              0 0 15px rgba(255, 107, 0, 0.1);
+            border: 1px solid transparent;
+            background-clip: padding-box;
+          }
+        }
+
+        span.unit {
+          position: absolute;
+          top: 50%;
+          right: 7px;
+          transform: translateY(-50%);
+          color: #665f59;
+          font-family: Inter;
+          font-size: 10px;
+          font-weight: 500;
+          line-height: 27px;
+        }
       }
 
       .custom {
-        color: var(--sosal_Lighten2_665F59, #665f59);
+        margin-top: 3px;
+        color: #665f59;
         font-family: Inter;
         font-size: 7px;
         font-style: normal;
@@ -579,15 +699,129 @@ input::placeholder {
       }
     }
   }
+
+  .priority-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 12px;
+
+    .text {
+      color: #665f59;
+      font-family: Inter;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+    .info {
+      margin: 0px 13px 0px 8px;
+
+      padding: 0px;
+    }
+
+    .priority-button {
+      display: flex;
+      justify-content: start;
+      position: relative;
+      .info {
+        margin-left: 8px;
+      }
+      .default {
+        color: var(--sosal_Lighten1_3D3935, #3d3935);
+        text-align: center;
+        font-family: Inter;
+        font-size: 6px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 12px;
+        width: 50px;
+        height: 12px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        border: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+        background: var(--sosal_Dark3_181616, #181616);
+      }
+      .auto {
+        color: var(--sosal_Main_FF8000, #ff8000);
+        text-align: center;
+        font-family: Inter;
+        font-size: 6px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 12px;
+        width: 50px;
+        height: 12px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        border: 0.4px solid var(--sosal_Main_FF8000, #ff8000);
+        background: var(--SelectedButton12-FF8000, rgba(255, 128, 0, 0.12));
+        position: relative;
+        left: -12px;
+      }
+      .icon {
+        position: absolute;
+        left: 38px;
+      }
+    }
+  }
+
+  .speed-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    .speed {
+      width: 62.5px;
+      height: 27px;
+
+      border-radius: 4px;
+      border: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+      background: var(--sosal_Dark3_181616, #181616);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .top {
+        display: flex;
+        gap: 2px;
+      }
+
+      .text1 {
+        color: var(--sosal_Lighten2_665F59, #665f59);
+        font-family: Inter;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+      .text2 {
+        color: var(--sosal_Lighten3_B2A18F, #b2a18f);
+        font-family: Inter;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .text3 {
+        color: var(--sosal_Lighten2_665F59, #665f59);
+        font-family: Inter;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
 }
 
-/* setting样式 */
 .setting {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 0.4px solid rgba(178, 161, 143, 40%);
-  border-bottom: 0.4px solid rgba(178, 161, 143, 40%);
+  border-top: 0.4px solid rgba(178, 161, 143, 0.4);
+  border-bottom: 0.4px solid rgba(178, 161, 143, 0.4);
   margin: 4px 0;
   padding: 8px 0;
   color: white;
@@ -606,7 +840,6 @@ input::placeholder {
   margin-left: auto;
 }
 
-/* buy 底部按钮 */
 .buyButton {
   width: 80%;
   height: 40px;

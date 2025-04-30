@@ -256,11 +256,75 @@
               <div class="bottom text3">0.018SOL</div>
             </div>
           </div>
+          <div class="fee-container">
+            <input type="text" />
+            <div class="text">SOL</div>
+          </div>
+          <div class="customInfo">Custom your priority fee (Max: 0.2 SOL)</div>
+          <div class="bribery-container">
+            <span class="text">BRIBERY:</span>
+            <div class="info">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+              >
+                <path
+                  d="M5.99995 1.20001C3.35275 1.20001 1.19995 3.35281 1.19995 6.00001C1.19995 8.64721 3.35275 10.8 5.99995 10.8C8.64715 10.8 10.8 8.64721 10.8 6.00001C10.8 3.35281 8.64715 1.20001 5.99995 1.20001ZM5.99995 9.93601C3.83035 9.93601 2.06395 8.16961 2.06395 6.00001C2.06395 3.83041 3.83035 2.06401 5.99995 2.06401C8.16955 2.06401 9.93595 3.83041 9.93595 6.00001C9.93595 8.16961 8.16955 9.93601 5.99995 9.93601Z"
+                  fill="#3D3935"
+                />
+                <path
+                  d="M5.99995 4.88281C5.66875 4.88281 5.39995 5.15161 5.39995 5.48281V8.62081C5.39995 8.95201 5.66875 9.22081 5.99995 9.22081C6.33115 9.22081 6.59995 8.95201 6.59995 8.62081V5.48281C6.59995 5.15161 6.33115 4.88281 5.99995 4.88281Z"
+                  fill="#3D3935"
+                />
+                <path
+                  d="M6.42115 3.27001C6.36955 3.21001 6.30115 3.16681 6.23275 3.14161C6.07795 3.08161 5.91595 3.08161 5.76955 3.14161C5.70115 3.16681 5.63275 3.21001 5.57155 3.27001C5.51995 3.33001 5.47795 3.39001 5.44315 3.46801C5.41675 3.53641 5.39995 3.61321 5.39995 3.69121C5.39995 3.77641 5.41795 3.85441 5.44315 3.92281C5.47795 4.00081 5.51995 4.05961 5.57155 4.12081C5.63155 4.18081 5.69995 4.22401 5.76955 4.24921C5.84635 4.28401 5.92315 4.30081 6.00115 4.30081C6.07915 4.30081 6.15595 4.28401 6.23275 4.24921C6.30115 4.22281 6.36955 4.18081 6.42115 4.12081C6.48115 4.06081 6.52435 4.00081 6.55795 3.92281C6.58435 3.85441 6.60115 3.77761 6.60115 3.69121C6.60115 3.61441 6.58435 3.53761 6.55795 3.46801C6.52315 3.39121 6.48115 3.33121 6.42115 3.27001Z"
+                  fill="#3D3935"
+                />
+              </svg>
+            </div>
+            <div class="bribery-button">
+              <div class="default">DEFAULT</div>
+              <div class="auto">AUTO</div>
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <circle cx="6" cy="6" r="6" fill="#B2A18F" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="bribery-r">
+            <div class="lower">
+              <div>Lower</div>
+              <div class="sol">0.006 SOL</div>
+            </div>
+            <div class="default">
+              <div>Default</div>
+              <div class="sol">0.012 SOL</div>
+            </div>
+            <div class="enter">
+              <input type="text" />
+              <div class="sol">SOL</div>
+            </div>
+          </div>
+          <div class="bribery-info">Custom your bribery (Max: 0.2 SOL)</div>
         </div>
         <div class="setting">
           <img class="left" src="/ui/Asset 49.svg" alt="" />
           <span>Auto TP/SL Settings</span>
           <img class="right" src="/ui/Asset 80.svg" alt="" />
+        </div>
+        <div>
+          <Adevanced></Adevanced>
         </div>
       </div>
       <div class="buyBottom">
@@ -287,6 +351,12 @@ import SportLight from './SportLight.vue';
 
 <style lang="scss" scoped>
 $darkColor: #181616;
+
+input {
+  border-radius: 4px;
+  border: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+  background: var(--sosal_Dark3_181616, #181616);
+}
 .right-container {
   margin: 8px;
 }
@@ -430,7 +500,7 @@ $darkColor: #181616;
 .defaultButton {
   font-size: 14px;
   height: 38px;
-  border: 0.4px solid #b2a18f;
+  border: 0.4px solid #665f59;
   flex-grow: 1;
   text-align: center;
   color: #b2a18f;
@@ -470,7 +540,7 @@ $darkColor: #181616;
   width: 150px;
   height: 27px;
   color: #b2a18f;
-  border: 0.4px solid #b2a18f;
+  border: 0.4px solid #665f59;
   line-height: 27px;
   border-radius: 4px;
 }
@@ -504,7 +574,7 @@ span.text {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 0.4px solid #b2a18f;
+  border: 0.4px solid #665f59;
   border-radius: 4px;
   padding: 4px;
 }
@@ -513,7 +583,7 @@ span.text {
   height: 27px;
   line-height: 27px;
   background-color: #181616;
-  border: 0.4px solid #b2a18f;
+  border: 0.4px solid #665f59;
   border-radius: 4px;
   color: #b2a18f;
   font-size: 12px;
@@ -524,7 +594,7 @@ span.text {
 }
 
 input::placeholder {
-  color: #b2a18f;
+  color: #665f59;
   font-weight: normal;
   font-size: 12px;
   opacity: 0.4;
@@ -550,7 +620,7 @@ input::placeholder {
 }
 .clickPrice {
   width: 70px;
-  border: 0.4px solid #b2a18f;
+  border: 0.4px solid #665f59;
   gap: 5px;
   padding: 8px;
   display: flex;
@@ -813,6 +883,249 @@ input::placeholder {
         line-height: normal;
       }
     }
+  }
+
+  .fee-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    input {
+      width: 100%;
+      color: var(--WhiteTextD1CDCB, #d1cdcb);
+      font-family: Inter;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 640;
+      line-height: normal;
+      &::placeholder {
+        color: #3d3935;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 27px;
+        vertical-align: middle;
+      }
+
+      &:focus {
+        outline: none;
+        opacity: 1;
+        background: #242021;
+        box-shadow:
+          0 0 0 1px rgba(255, 107, 0, 0.3),
+          0 0 15px rgba(255, 107, 0, 0.1);
+        border: 1px solid transparent;
+        background-clip: padding-box;
+      }
+    }
+
+    div {
+      position: absolute;
+      right: 7px;
+
+      color: var(--sosal_Lighten2_665F59, #665f59);
+      text-align: right;
+      font-family: Inter;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+  .customInfo {
+    color: var(--sosal_Lighten2_665F59, #665f59);
+    font-family: Inter;
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 4px;
+    margin-bottom: 11px;
+  }
+  .bribery-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 12px;
+
+    .text {
+      color: #665f59;
+      font-family: Inter;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+    .info {
+      margin: 0px 39px 0px 8px;
+
+      padding: 0px;
+    }
+
+    .bribery-button {
+      display: flex;
+      justify-content: start;
+      position: relative;
+      .info {
+        margin-left: 8px;
+      }
+      .default {
+        color: var(--sosal_Lighten1_3D3935, #3d3935);
+        text-align: center;
+        font-family: Inter;
+        font-size: 6px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 12px;
+        width: 50px;
+        height: 12px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        border: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+        background: var(--sosal_Dark3_181616, #181616);
+      }
+      .auto {
+        color: var(--sosal_Main_FF8000, #ff8000);
+        text-align: center;
+        font-family: Inter;
+        font-size: 6px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 12px;
+        width: 50px;
+        height: 12px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        border: 0.4px solid var(--sosal_Main_FF8000, #ff8000);
+        background: var(--SelectedButton12-FF8000, rgba(255, 128, 0, 0.12));
+        position: relative;
+        left: -12px;
+      }
+      .icon {
+        position: absolute;
+        left: 38px;
+      }
+    }
+  }
+
+  .bribery-r {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11px;
+    margin-bottom: 4px;
+    .lower {
+      width: 62.5px;
+      height: 27px;
+      flex-shrink: 0;
+
+      border-radius: 4px;
+      border: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+      background: var(--sosal_Dark3_181616, #181616);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      div {
+        color: var(--sosal_Lighten2_665F59, #665f59);
+        font-family: Inter;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+    .default {
+      width: 62.5px;
+      height: 27px;
+      flex-shrink: 0;
+      border-radius: 4px;
+      border: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+      background: var(--sosal_Dark3_181616, #181616);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      div {
+        color: var(--sosal_Lighten2_665F59, #665f59);
+        text-align: center;
+        font-family: Inter;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+      & div:nth-child(2) {
+        color: var(--sosal_Lighten3_B2A18F, #b2a18f);
+        font-family: Inter;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+    .enter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      input {
+        width: 134px;
+        height: 27px;
+        color: var(--WhiteTextD1CDCB, #d1cdcb);
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 640;
+        line-height: normal;
+        color: #d1cdcb;
+        padding-left: 8px;
+        &::placeholder {
+          color: #3d3935;
+          font-family: Inter;
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 27px;
+          vertical-align: middle;
+        }
+
+        &:focus {
+          outline: none;
+          opacity: 1;
+          background: #242021;
+          box-shadow:
+            0 0 0 1px rgba(255, 107, 0, 0.3),
+            0 0 15px rgba(255, 107, 0, 0.1);
+          border: 1px solid transparent;
+          background-clip: padding-box;
+        }
+      }
+      .sol {
+        position: absolute;
+        right: 7px;
+        color: var(--sosal_Lighten2_665F59, #665f59);
+        text-align: right;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+
+  .bribery-info {
+    color: var(--sosal_Lighten2_665F59, #665f59);
+    font-family: Inter;
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: end;
+    padding-right: 16px;
   }
 }
 

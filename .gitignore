@@ -3,6 +3,8 @@
 /font-code/node_modules/*
 /font-code/dist/*
 /font-code/dist-ssr/*
+/sosal_4_15
+/trading_view
 *.local
 
 # 日志文件

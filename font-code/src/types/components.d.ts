@@ -16,6 +16,7 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Sidebar: typeof import('./../components/Sidebar.vue')['default']
+    SliderButton: typeof import('./../components/miniComponents/SliderButton.vue')['default']
     SportLight: typeof import('./../components/SportLight.vue')['default']
     SvgIcon: typeof import('./../components/SvgIcon.vue')['default']
     Tracking: typeof import('./../components/Tracking.vue')['default']

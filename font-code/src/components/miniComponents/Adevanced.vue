@@ -42,11 +42,94 @@
       </svg>
     </div>
   </div>
+  <div class="trigger-container">
+    <input type="text" />
+    <div class="trigger-price">Trigger Price at</div>
+    <div class="qujianxiaoyu">≤</div>
+    <div class="qujiandayu">$</div>
+  </div>
+
+  <div class="trigger-container">
+    <input type="text" />
+    <div class="trigger-price">Current Price ↓</div>
+    <div class="qujianxiaoyu">≥</div>
+    <div class="qujiandayu">%</div>
+  </div>
+
+  <div class="trigger-on">Triggers on: $PRICE ≤ 0.0541552,SOL ≤ 0.0383104</div>
+
+  <div class="slider-container">
+    <SliderButton></SliderButton>
+  </div>
+
+  <div class="sell-expires">
+    <div class="sell">
+      <div class="sell-amount">Sell Amount</div>
+      <div class="number">
+        <input type="text" />
+        <span>%</span>
+      </div>
+    </div>
+    <div class="expires">
+      <div class="expires-in-hrs">Expires in hrs</div>
+      <div class="number">
+        <input type="text" />
+        <span>H</span>
+      </div>
+    </div>
+  </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref, watch, onMounted } from 'vue';
+
+const percentage = ref(30);
+const sliderRef = ref(null); // ref 绑定 DOM 节点
+
+watch(percentage, (newVal) => {
+  if (sliderRef.value) {
+    sliderRef.value.style.setProperty('--percent', newVal / 90);
+  }
+});
+
+onMounted(() => {
+  if (sliderRef.value) {
+    sliderRef.value.style.setProperty('--percent', percentage.value / 90);
+  }
+});
+</script>
 
 <style lang="scss" scoped>
+input[type='text'] {
+  height: 27px;
+  border-radius: 4px;
+  border: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+  background: var(--sosal_Dark3_181616, #181616);
+
+  color: #d1cdcb;
+
+  &::placeholder {
+    color: #3d3935;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px;
+    vertical-align: middle;
+  }
+
+  &:focus {
+    outline: none;
+    opacity: 1;
+    background: #242021;
+    box-shadow:
+      0 0 0 1px rgba(255, 107, 0, 0.3),
+      0 0 15px rgba(255, 107, 0, 0.1);
+    border: 0.4px solid transparent;
+    background-clip: padding-box;
+  }
+}
+
 .mev-container {
   display: flex;
   align-items: center;
@@ -59,12 +142,201 @@
     font-weight: 300;
     line-height: normal;
     text-transform: capitalize;
-    margin-right: 39px;
+  }
+  .button {
+    left: 39px;
   }
 
   .info {
     margin-left: 4px;
     padding: 0;
+  }
+}
+
+.trigger-container {
+  width: 100%;
+  height: 27px;
+  flex-shrink: 0;
+  position: relative;
+  margin-bottom: 8px;
+
+  input {
+    width: 100%;
+    height: 27px;
+    padding-left: 158px;
+    color: var(--WhiteTextD1CDCB, #d1cdcb);
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 640;
+    line-height: normal;
+  }
+  .trigger-price {
+    position: absolute;
+    top: 0px;
+    width: 137px;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 8px;
+    color: var(--sosal_Lighten3_B2A18F, #b2a18f);
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    flex-shrink: 0;
+    border-radius: 4px 0px 0px 4px;
+    border-top: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+    border-bottom: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+    border-left: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+    background: var(--sosal_Lighten1_3D3935, #3d3935);
+  }
+
+  .qujianxiaoyu {
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    position: absolute;
+    top: 0px;
+    margin-left: 144px;
+    color: var(--sosal_Lighten2_665F59, #665f59);
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 640;
+  }
+
+  .qujiandayu {
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    position: absolute;
+    top: 0px;
+    margin-left: 260px;
+    color: var(--sosal_Lighten2_665F59, #665f59);
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 640;
+  }
+}
+
+.trigger-on {
+  margin-top: -4px;
+  color: var(--sosal_Lighten2_665F59, #665f59);
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 17px;
+}
+
+.slider-container {
+  margin-bottom: 11px;
+}
+
+.sell-expires {
+  display: flex;
+  justify-content: space-between;
+  .sell {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .sell-amount {
+      position: absolute;
+      width: 86.5px;
+      height: 27px;
+      color: var(--sosal_Lighten3_B2A18F, #b2a18f);
+      font-family: Inter;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 27px;
+      padding-left: 8px;
+      border-radius: 4px 0px 0px 4px;
+      background: var(--sosal_Lighten1_3D3935, #3d3935);
+      border-top: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+      border-bottom: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+      border-left: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+    }
+    .number {
+      display: flex;
+      align-items: center;
+      input {
+        width: 133px;
+        height: 27px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        border: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+        background-color: #181616;
+        padding-left: 96px;
+        color: #d1cdcb;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 640;
+      }
+      span {
+        position: absolute;
+        right: 7px;
+        color: var(--sosal_Lighten2_665F59, #665f59);
+        font-family: Inter;
+        font-size: 10px;
+        // font-style: normal;
+        font-weight: 500;
+        vertical-align: middle;
+      }
+    }
+  }
+  .expires {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .expires-in-hrs {
+      position: absolute;
+      width: 86.5px;
+      height: 27px;
+      color: var(--sosal_Lighten3_B2A18F, #b2a18f);
+      font-family: Inter;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 27px;
+      padding-left: 8px;
+      border-radius: 4px 0px 0px 4px;
+      background: var(--sosal_Lighten1_3D3935, #3d3935);
+      border-top: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+      border-bottom: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+      border-left: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+    }
+    .number {
+      display: flex;
+      align-items: center;
+      input {
+        width: 133px;
+        height: 27px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        border: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+        background-color: #181616;
+        padding-left: 96px;
+        color: #d1cdcb;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 640;
+      }
+      span {
+        position: absolute;
+        right: 7px;
+        color: var(--sosal_Lighten2_665F59, #665f59);
+        font-family: Inter;
+        font-size: 10px;
+        // font-style: normal;
+        font-weight: 500;
+        vertical-align: middle;
+      }
+    }
   }
 }
 </style>

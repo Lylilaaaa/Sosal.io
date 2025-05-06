@@ -891,6 +891,7 @@ input::placeholder {
     position: relative;
     input {
       width: 100%;
+      height: 27px;
       color: var(--WhiteTextD1CDCB, #d1cdcb);
       font-family: Inter;
       font-size: 10px;

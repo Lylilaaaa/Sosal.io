@@ -19,6 +19,7 @@ declare module 'vue' {
     SliderButton: typeof import('./../components/miniComponents/SliderButton.vue')['default']
     SportLight: typeof import('./../components/SportLight.vue')['default']
     SvgIcon: typeof import('./../components/SvgIcon.vue')['default']
+    TakeProfit: typeof import('./../components/miniComponents/TakeProfit.vue')['default']
     Tracking: typeof import('./../components/Tracking.vue')['default']
   }
 }

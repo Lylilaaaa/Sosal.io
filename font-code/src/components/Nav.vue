@@ -36,6 +36,7 @@
   width: 100%;
   background-color: #141212;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   position: fixed;

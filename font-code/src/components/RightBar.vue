@@ -445,17 +445,18 @@ input {
 
 .smallText {
   font-size: 8px;
-  color: #b2a18f;
+  color: #665f59;
 }
 
 .bigText {
   font-size: 18px;
-  color: #b2a18f;
+  color: #665f59;
   font-weight: bold;
 }
 
 .bold {
   font-weight: bold;
+  color: #b2a18f;
 }
 
 .bigTextGreen {
@@ -473,7 +474,7 @@ input {
 .thirdLine {
   display: flex;
   font-size: 7px;
-
+  justify-content: space-between;
   margin-top: 8px;
   white-space: nowrap;
 }
@@ -506,18 +507,28 @@ input {
   color: #b2a18f;
   line-height: 38px;
   border-radius: 8px;
-  /* font-weight: bold; */
+
+  color: var(--sosal_Lighten1_3D3935, #3d3935);
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .buyNav a {
+  color: var(--sosal_Lighten1_3D3935, #3d3935);
+  font-family: Inter;
   font-size: 12px;
-  color: white;
-  text-decoration: none;
+  font-style: normal;
+  font-weight: 640;
   margin-right: 20px;
 }
 
 .buyNav a.select {
-  font-weight: bold;
+  color: var(--WhiteTextD1CDCB, #d1cdcb);
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 640;
 }
 
 .selectButton {
@@ -549,8 +560,14 @@ input {
 }
 
 span.text {
+  color: var(--sosal_Lighten2_665F59, #665f59);
+  text-align: right;
+  font-family: Inter;
   font-size: 10px;
-  color: #b2a18f;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
 }
 
 .selectWalletTop img {
@@ -632,7 +649,13 @@ input::placeholder {
 }
 
 .clickPrice span {
-  font-size: 12px;
+  color: var(--sosal_Lighten3_B2A18F, #b2a18f);
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+
+  text-transform: capitalize;
 }
 .selectPrice img {
   width: 18px;
@@ -642,8 +665,12 @@ input::placeholder {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
-  color: #b2a18f;
+
+  color: var(--sosal_Lighten2_665F59, #665f59);
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: capitalize;
 
   margin-bottom: 6px;
 }
@@ -660,6 +687,19 @@ input::placeholder {
 .mev span span {
   color: #b2a18f;
   margin: 2px;
+}
+
+.buySetting {
+  .setting {
+    span {
+      color: var(--WhiteTextD1CDCB, #d1cdcb);
+      font-family: Inter;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
 }
 
 .advanced {

@@ -133,6 +133,18 @@
     <TakeProfit class="takeprofit" count="3"></TakeProfit>
   </div>
   <div class="warn-info info2">% of the total <span>SELL</span> must not over 100%</div>
+
+  <div class="exp-in">
+    <span> Expires in hrs </span>
+    <input type="number" value="24" />
+  </div>
+
+  <div class="warn-info">
+    Once you click on <span>BUY</span>, your <span>STOP LOSS ORDER</span> will be created
+    immediately.
+  </div>
+
+  <hr />
 </template>
 
 <script setup>
@@ -421,5 +433,70 @@ input[type='text'] {
 .info2 {
   text-align: end;
   padding-right: 37px;
+}
+
+.exp-in {
+  display: flex;
+  width: 133px;
+  height: 27px;
+  flex-shrink: 0;
+  background: var(--sosal_Dark3_181616, #181616);
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 6px;
+  box-sizing: border-box;
+
+  span {
+    width: 86.5px;
+    height: 100%;
+    flex-shrink: 0;
+    color: var(--sosal_Lighten3_B2A18F, #b2a18f);
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px;
+    border-radius: 4px 0px 0px 4px;
+    background: var(--sosal_Lighten1_3D3935, #3d3935);
+    border-radius: 4px 0px 0px 4px;
+    border-top: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+    border-bottom: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+    border-left: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+    text-align: center;
+  }
+
+  input {
+    all: unset;
+    width: 46.5px;
+    height: 27px;
+    flex-shrink: 0;
+    color: var(--WhiteTextD1CDCB, #d1cdcb);
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 640;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: 0.4px solid var(--sosal_Lighten2_665F59, #665f59);
+    background: var(--sosal_Dark3_181616, #181616);
+    box-sizing: border-box;
+    padding-left: 9.5px;
+    /* Chrome, Safari, Edge, Opera */
+    &[type='number']::-webkit-outer-spin-button,
+    &[type='number']::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    &[type='number'] {
+      -moz-appearance: textfield;
+    }
+  }
+}
+hr {
+  border: none;
+  border-top: 0.4px solid #665f59;
+  margin-top: 10px;
 }
 </style>

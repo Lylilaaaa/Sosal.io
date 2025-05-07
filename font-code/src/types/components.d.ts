@@ -21,5 +21,7 @@ declare module 'vue' {
     SvgIcon: typeof import('./../components/SvgIcon.vue')['default']
     TakeProfit: typeof import('./../components/miniComponents/TakeProfit.vue')['default']
     Tracking: typeof import('./../components/Tracking.vue')['default']
+    Tracking1: typeof import('./../components/Tracking1.vue')['default']
+    Tracking2: typeof import('./../components/Tracking2.vue')['default']
   }
 }

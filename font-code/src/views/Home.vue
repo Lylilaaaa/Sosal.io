@@ -27,14 +27,12 @@
   flex: 1;
   height: 100%;
   overflow-y: auto;
-
   scrollbar-width: none;
 }
 
 .scroll-zone-right {
   height: 100%;
   overflow-y: auto;
-
   scrollbar-width: none;
 }
 .home {

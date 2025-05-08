@@ -1287,17 +1287,6 @@ a {
         line-height: 26px;
         gap: 2px;
       }
-      .date {
-        margin-right: 15px;
-      }
-
-      .price {
-        margin-right: 10px;
-      }
-
-      .usd {
-        margin-right: 25px;
-      }
     }
   }
 
@@ -1334,27 +1323,6 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-      }
-
-      .date {
-        margin-right: 55px;
-      }
-
-      .price {
-        margin-right: 2px;
-      }
-      .sol {
-        margin-right: 9px;
-      }
-
-      .makers {
-        gap: 3px;
-
-        flex: 1;
-      }
-
-      .many {
-        gap: 6px;
       }
     }
   }

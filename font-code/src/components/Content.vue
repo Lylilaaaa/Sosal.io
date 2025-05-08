@@ -2,7 +2,7 @@
   <!-- 图表容器 -->
   <div>
     <div class="tradingview-widget-container" ref="widgetContainer"></div>
-    <Tracking />
+    <Tracking4 :headers="tableHeaders" :rows="tableRows" />
   </div>
 </template>
 
@@ -11,6 +11,14 @@ import { onMounted, ref } from 'vue';
 
 // 绑定图表容器的引用
 const widgetContainer = ref<HTMLDivElement | null>(null);
+
+const tableHeaders = ['列1', '列2', '列3', '列4'];
+
+const tableRows = [
+  ['数据A1', '数据A2', '数据A3', '数据A4'],
+  ['数据B1', '数据B2', '数据B3', '数据B4'],
+  ['数据C1', '数据C2', '数据C3', '数据C4'],
+];
 
 onMounted(() => {
   if (!widgetContainer.value) return;

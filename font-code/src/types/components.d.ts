@@ -10,7 +10,9 @@ declare module 'vue' {
   export interface GlobalComponents {
     Adevanced: typeof import('./../components/miniComponents/Adevanced.vue')['default']
     Content: typeof import('./../components/Content.vue')['default']
+    DataList: typeof import('./../components/miniComponents/DataList.vue')['default']
     DefaultLayout: typeof import('./../layouts/DefaultLayout.vue')['default']
+    List: typeof import('./../components/miniComponents/List.vue')['default']
     Nav: typeof import('./../components/Nav.vue')['default']
     RightBar: typeof import('./../components/RightBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
@@ -23,5 +25,8 @@ declare module 'vue' {
     Tracking: typeof import('./../components/Tracking.vue')['default']
     Tracking1: typeof import('./../components/Tracking1.vue')['default']
     Tracking2: typeof import('./../components/Tracking2.vue')['default']
+    Tracking3: typeof import('./../components/Tracking3.vue')['default']
+    Tracking4: typeof import('./../components/Tracking4.vue')['default']
+    TrackingView: typeof import('./../components/TrackingView.vue')['default']
   }
 }

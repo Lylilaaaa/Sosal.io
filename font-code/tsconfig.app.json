@@ -23,6 +23,7 @@
     // 路径别名配置
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": ["element-plus/global"]
   }
 }

@@ -7,8 +7,9 @@ import vueDevTools from 'vite-plugin-vue-devtools';
 import autoImport from 'unplugin-auto-import/vite';
 // 导入自动导入组件插件
 import components from 'unplugin-vue-components/vite';
-import path from 'path';
-import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers' // ★ 引入 ElementPlus 解析器
+
+
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -18,18 +19,16 @@ export default defineConfig({
     components({
       dirs: ['./src/components', './src/layouts'],
       dts: './src/types/components.d.ts',
+      resolvers: [ElementPlusResolver()],
     }),
     autoImport({
       imports: ['vue', 'vue-router'],
       dts: './src/types/auto-imports.d.ts',
       dirs: ['./src/**/*'],
       vueTemplate: true,
+      resolvers:[ElementPlusResolver()]
     }),
-    createSvgIconsPlugin({
-      // 修改这里：匹配你自己的图标目录
-      iconDirs: [path.resolve(process.cwd(), 'src/assets/svg')],
-      symbolId: 'icon-[name]',
-    }),
+
   ],
   resolve: {
     alias: {

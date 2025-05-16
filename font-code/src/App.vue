@@ -4,14 +4,12 @@
 
 <template>
   <router-view />
+  <!-- <ComponentYouAreDeveloping /> -->
 </template>
 
 <style lang="scss" scoped>
-
 body {
-
-
   font-size: 14px;
-  background-color: $bgColor;
+  // background-color: $bgColor;
 }
 </style>

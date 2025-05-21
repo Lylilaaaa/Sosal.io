@@ -1,18 +1,20 @@
 <template>
-  <div class="sidebar-container">
+  <div v-if="token" class="sidebar-container">
     <div class="darkBg">
       <!-- 货币信息区域 -->
       <div class="coin-profile">
-        <img src="/ui/Asset 33.svg" alt="" />
+        <img :src="token.image" alt="" />
         <div class="coin-av">
           <div class="coin-name">
-            $ABCDE
+            {{ token.name }}
             <span>Full Name</span>
           </div>
           <div class="coin-address">
-            <span>8vqG...Abcd</span>
+            <span class="account">{{ token.account }}</span>
             <img src="/ui/Asset 9.svg" alt="" />
-            <img src="/ui/Asset 13.svg" alt="" />
+            <a v-if="token.twitter" :href="token.twitter" target="_blank"
+              ><img src="/ui/Asset 13.svg" alt=""
+            /></a>
             <img src="/ui/Asset 12.svg" alt="" />
             <img src="/ui/Asset 11.svg" alt="" />
             <img src="/ui/Asset 10.svg" alt="" />
@@ -311,10 +313,46 @@
 
 // 示例数据
 // const tokenData = {}
+import axios from 'axios';
+import { ref, onMounted } from 'vue';
 
-fetch('/api/api/coins/getAll') // 改为相对路径，由Vite代理
-  .then((response) => response.json())
-  .then((data) => console.log(data));
+const token = ref({});
+
+onMounted(async () => {
+  try {
+    const res = await axios.post('/api/helius/get-token-metadata', {
+      mintAddresses: ['4zPy9LMz36BrXqAJhknGCQEbyfosF2b1hiw1BNfYpump'],
+    });
+
+    const item = res.data?.[0];
+    if (!item) return;
+
+    token.value = {
+      account: item.account,
+      name: item.offChainMetadata.metadata.name,
+      symbol: item.offChainMetadata.metadata.symbol,
+      image: item.offChainMetadata.metadata.image,
+      description: item.offChainMetadata.metadata.description,
+      twitter: item.offChainMetadata.metadata.twitter,
+      createdOn: item.offChainMetadata.metadata.createdOn,
+
+      decimals: item.onChainAccountInfo.accountInfo.data.parsed.info.decimals,
+      supply: item.onChainAccountInfo.accountInfo.data.parsed.info.supply,
+      mintAuthority: item.onChainAccountInfo.accountInfo.data.parsed.info.mintAuthority,
+      freezeAuthority: item.onChainAccountInfo.accountInfo.data.parsed.info.freezeAuthority,
+      isInitialized: item.onChainAccountInfo.accountInfo.data.parsed.info.isInitialized,
+
+      tokenStandard: item.onChainMetadata.metadata.tokenStandard,
+      updateAuthority: item.onChainMetadata.metadata.updateAuthority,
+      metadataUri: item.onChainMetadata.metadata.data.uri,
+      editionNonce: item.onChainMetadata.metadata.editionNonce,
+      primarySaleHappened: item.onChainMetadata.metadata.primarySaleHappened,
+      isMutable: item.onChainMetadata.metadata.isMutable,
+    };
+  } catch (err) {
+    console.error('请求失败:', err);
+  }
+});
 </script>
 
 <style lang="scss" scoped>
@@ -404,6 +442,11 @@ div .coin-name span {
 }
 
 .coin-address span {
+  width: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  margin-right: 4px;
   font-size: 10px;
   color: #b2a18f;
   cursor: pointer;

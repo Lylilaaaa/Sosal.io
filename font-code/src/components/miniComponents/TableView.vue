@@ -276,7 +276,7 @@ onMounted(fetchData);
 async function fetchData() {
   loading.value = true;
   try {
-    const { data } = await axios.get<Row[]>('/api/your-endpoint');
+    const { data } = await axios.get<Row[]>('/api');
     tableData.value = data;
   } finally {
     loading.value = false;

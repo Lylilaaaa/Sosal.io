@@ -13,7 +13,6 @@ declare module 'vue' {
     DataList: typeof import('./../components/miniComponents/DataList.vue')['default']
     DefaultLayout: typeof import('./../layouts/DefaultLayout.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
-    ElRadioButton: typeof import('element-plus/es')['ElRadioButton']
     ElTable: typeof import('element-plus/es')['ElTable']
     ElTableColumn: typeof import('element-plus/es')['ElTableColumn']
     Nav: typeof import('./../components/Nav.vue')['default']

@@ -49,7 +49,7 @@ export default defineConfig({
       '/api': {
         target: 'http://15.168.90.221:8081', // 后端地址
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''), // 重写路径，去掉/api前缀
+        // rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
   },

@@ -1,5 +1,5 @@
 <template>
-  <div v-if="token" class="sidebar-container">
+  <div v-show="token" class="sidebar-container">
     <div class="darkBg">
       <!-- 货币信息区域 -->
       <div class="coin-profile">

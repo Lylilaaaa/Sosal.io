@@ -362,6 +362,7 @@ onMounted(async () => {
   width: 100%;
   height: 64px;
 }
+
 .darkBg {
   background-color: $darkColor;
   padding: 8px 12px 0 12px;

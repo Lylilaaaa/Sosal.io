@@ -1,7 +1,14 @@
 {
   "extends": "@vue/tsconfig/tsconfig.dom.json", // 保留官方 Vue 配置
 
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "include": [
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    "src/types/components.d.ts",
+    "src/types/auto-imports.d.ts",
+    "src/global.d.ts"
+  ],
 
   "exclude": ["src/**/__tests__/*"],
 

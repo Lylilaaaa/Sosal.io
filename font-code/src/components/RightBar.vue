@@ -657,6 +657,7 @@ input::placeholder {
 
   text-transform: capitalize;
 }
+
 .selectPrice img {
   width: 18px;
 }

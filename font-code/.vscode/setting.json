@@ -1,7 +1,8 @@
 {
-    "scss.validate": true,
-    "scss.lint.unknownAtRules": "ignore",
-    "path-intellisense.mappings": {
-      "@": "${workspaceRoot}/src"
-    }
+  "scss.validate": true,
+  "scss.lint.unknownAtRules": "ignore",
+  "path-intellisense.mappings": {
+    "@": "${workspaceRoot}/src"
+  },
+   "prettier.requireConfig": true // 没有 .prettierrc 时就不会乱格式化
 }

@@ -3,8 +3,8 @@
   <div>
     <div class="tradingview-widget-container" ref="widgetContainer"></div>
     <Tracking4 :headers="tableHeaders" :rows="tableRows" />
-    <TableView></TableView>
-    <TView></TView>
+    <!-- <TableView></TableView> -->
+    <!-- <TView></TView> -->
   </div>
 </template>
 
